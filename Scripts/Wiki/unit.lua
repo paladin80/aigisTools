@@ -60,6 +60,7 @@ local max_aw_level = {
   [3] = 80,
   [4] = 90,
   [7] = 85,
+  [10] = 90
 }
 
 local affbonus = {
@@ -280,6 +281,9 @@ local function get_classes(id)
       if card.Rare <= 2 and cc >= 2 then
         classes[i] = nil
       end
+    end
+    if card._AwakePattern == 0 then
+      classes = {classes[#classes]}
     end
     my_info.classes = classes
   end
