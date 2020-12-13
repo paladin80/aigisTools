@@ -285,7 +285,7 @@ local function get_classes(id)
         classes[i] = nil
       end
     end
-    if card._AwakePattern == 0 then
+    if card.Rare >= 10 and card._AwakePattern == 0 then
       classes = {classes[#classes]}
     end
     my_info.classes = classes
@@ -307,10 +307,11 @@ local function get_interesting_levels(id, class)
     end
   elseif cc == 0 or cc == 1 then
     local maxlevel = math.min(class.MaxLevel, max_preaw_level[card.Rare] or class.MaxLevel)
-    table.insert(levels, maxlevel)
-    if card.Rare == 2 and maxlevel == 50 then
-      -- include both 50 and 55 for silver
+    if card.Rare == 2 and cc == 1 then
+      -- level 55 for silvers
       table.insert(levels, 55)
+    else
+      table.insert(levels, maxlevel)
     end
   elseif cc == 2 then
     local maxlevel = math.min(class.MaxLevel, max_aw_level[card.Rare] or class.MaxLevel)
