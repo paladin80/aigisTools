@@ -64,16 +64,16 @@ local max_aw_level = {
 }
 
 local affbonus = {
-  [1] = "HP",
-  [2] = "ATK",
-  [3] = "DEF",
-  [4] = "Range",
-  [5] = "MR",
-  [6] = "Speed",
-  [7] = "Skill Duration Increase",
-  [8] = "Skill CD Reduction",
-  [9] = "Physical Attack Evasion",
-  [13] = "Cost Reduction"
+  [1] = "HP+",
+  [2] = "ATK+",
+  [3] = "DEF+",
+  [4] = "Range+",
+  [5] = "MR+",
+  [6] = "{{Tt|Post-Attack Delay|PAD}}-",
+  [7] = "{{Tt|Skill Duration|SDI}}+",
+  [8] = "{{Tt|Skill Cooldown|SCD}}-",
+  [9] = "{{Tt|Physical Attack Evasion|PEV}}+",
+  [13] = "Cost-"
 }
 
 local art_suffix = {
@@ -154,7 +154,7 @@ local special_influence_lookup = {
   [34] = {name = "Command"},
 }
 
-local function affection(t, n, full)
+local function affection(t, n, type)
   local x = t
   t = affbonus[t]
   if t == nil then
@@ -163,15 +163,18 @@ local function affection(t, n, full)
   if t == nil and t >= 1 then -- this is broke
     t = "T=" .. t
   end
-  if not full then
+  if type == 50 then
     n = math.floor(n * .5 + .5)
-  else
+  end
+  if type == 100 then
     n = math.floor(n * 1.2 + .5)
   end
-  return t .. " +" .. n
+  local suffix = ""
+  if x > 5 and x < 10 then
+    suffix = "%"
+  end
+  return t .. n .. suffix
 end
-
-
 
 local initialized = false
 local function initialize()
@@ -488,7 +491,7 @@ local function parse(id)
     out = out .. "Max cost: " .. (class.Cost + card.CostModValue) .. "; Min cost: " .. (class.Cost + card.CostModValue - card.CostDecValue) .. "\n"
     
     local aff_bonuses = {}
-    local full_affection_bonus = class.MaxLevel > 50 -- maybe not the true condition...
+    local full_affection_bonus = (class.MaxLevel > 50) and 100 or 50
     if card.BonusType ~= 0 then
       table.insert(aff_bonuses, affection(card.BonusType, card.BonusNum, full_affection_bonus))
     end
@@ -496,7 +499,7 @@ local function parse(id)
       table.insert(aff_bonuses, affection(card.BonusType2, card.BonusNum2, full_affection_bonus))
     end
     if card.BonusType3 ~= 0 then
-      table.insert(aff_bonuses, affection(card.BonusType3, card.BonusNum3))
+      table.insert(aff_bonuses, affection(card.BonusType3, card.BonusNum3, 150))
     end
     if #aff_bonuses > 0 then
       out = out .. "Affection bonus(es): " .. table.concat(aff_bonuses, "; ") .. "\n"
@@ -782,31 +785,27 @@ local function parsewiki(id)
     statsdump = statsdump..maxcost..mincost..'\n'
     
     local aff_bonuses = {}
-    local full_affection_bonus = class.MaxLevel > 50 -- maybe not the true condition...
+    local full_affection_bonus = (class.MaxLevel > 50) and 100 or 50
     if card.BonusType ~= 0 then
       table.insert(aff_bonuses, affection(card.BonusType, card.BonusNum, full_affection_bonus))
     end
     if card.BonusType2 ~= 0 then
       table.insert(aff_bonuses, affection(card.BonusType2, card.BonusNum2, full_affection_bonus))
     end
-    if card.BonusType3 ~= 0 then
-      table.insert(aff_bonuses, affection(card.BonusType3, card.BonusNum3, full_affection_bonus))
-    end
+    local str
     if #aff_bonuses > 0 then
-	  if classevol and cc == 0 then
-	    str = string.gsub(table.concat(aff_bonuses, "<br>"),'%s','')
-	    str = string.gsub(str,'Speed[+](%d+)','ATK Delay -%1%%')
+      if classevol and cc == 0 then
+        str = string.gsub(table.concat(aff_bonuses, "<br>"),'%s','')
         statsdump = statsdump .. "|50AffBonus = " .. str .. "\n"
-	  elseif classevol and cc == 1 then
-	    str = string.gsub(table.concat(aff_bonuses, "<br>"),'%s','')
-	    str = string.gsub(str,'Speed[+](%d+)','ATK Delay -%1%%')
+      elseif (classevol and cc == 1) or (cc == 0) then
+        str = string.gsub(table.concat(aff_bonuses, "<br>"),'%s','')
         statsdump = statsdump .. "|100AffBonus = " .. str .. "\n"
-	  elseif cc == 0 then
-	    str = string.gsub(table.concat(aff_bonuses, "<br>"),'%s','')
-	    str = string.gsub(str,'Speed[+](%d+)','ATK Delay -%1%%')
-        statsdump = statsdump .. "|100AffBonus = " .. str .. "\n"
-	  end
+        if card.BonusType3 ~= 0 then
+          statsdump = statsdump .. "|150AffBonus = " .. affection(card.BonusType3, card.BonusNum3, 150) .. "\n"
+        end
+      end
     end
+
 	statsdump = statsdump .. (skillnametable[cc+1] or '')
 	statsdump = statsdump .. (abilitynametable[cc+1] or '')
     statsdump = statsdump .. "\n"
