@@ -1,0 +1,14 @@
+人間 = Human
+獣人 = Beastfolk
+竜人 = Dragon
+エルフ = Elf
+ダークエルフ = Dark Elf
+ハーフエルフ = Half Elf
+ドワーフ = Dwarf
+ヴァンパイア = Vampire
+デーモン = Demon
+天使 = Angel
+妖怪 = Youkai
+仙人 = Hermit
+オーク = Orc
+聖霊 = Holy Spirit

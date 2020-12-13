@@ -1,0 +1,19 @@
+-- unit (not lib)
+-- v1.0
+-- author: ShinyAfro
+
+--local config = require "lookup//config"
+local Config = require "lookup//config"
+local EnemyFunctions = require("wiki/enemy")
+local EnemyList = {}
+local ArgList = {["gif"] = true}
+local AcceptedModes = {
+	["gif"] = true
+}
+for Arg, Value in ipairs(arg) do
+	table.insert(EnemyList, tonumber(Value))
+end
+
+for i, Enemy in pairs(EnemyList) do
+	EnemyFunctions.GetGifs(Enemy, ArgList)
+end

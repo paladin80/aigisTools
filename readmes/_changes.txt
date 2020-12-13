@@ -1,0 +1,83 @@
+==release 3==
+===3.1.0===
+New:
+  * Skill function:
+    * Upgraded version of "get_skill.lua"
+    * Gets the skill and every single skill it changes to. (Aka, a chain.) For example, if used on Silvia's awakened skill it will output all 3 skills.
+    * Use with the dump mode to generate a .txt of the output to the dump location.
+  * Filelist function:
+    * Upgraded version of "get_filelist.lua"
+    * Automatically backs up the old files.txt as files_old.txt if the new files.txt is different from the original one.
+    * If an old files.txt is generated or is found it will generate a list of changes in out/changes.txt
+Changes:
+  * Unit
+    * Sprite scaling is now automatically configured using data from the cards xml
+    * All skills in a skill chain will be displayed in a relevant units info.txt if generated.
+  * Config.lua
+    * Cleaned it up a little.
+
+===3.0.1===
+New:
+  * Update function
+    * Automatically updates the url and xml's when an appropriate har titled "list.har" is placed in the root directory
+    * See [[User:ShinyAfro/Aigis_Tools_3.0/HAR|here]] for how to generate a .har file.
+    * To use it type "do update" into the cmd window.
+Changes:
+  * Moved ability / skill effect localisations to scripts/arrays
+  * Moved Name, Class and Race localisations to Data/localisations
+  * Changed the format of Name, Class and Race localisations to be more easier to edit
+  * Moved XML's to just Data/XML, rather then a specified sub-folder of that directory
+  * Moved URL to "Data/list/URL.txt"
+Bugfixes:
+  * HCG.lua no longer crashes instantly.
+
+===3.0.0===
+  * Moved file url and xml location files into the new config.lua
+  * New config.lua : A mess of configurable options to customize the dataminer
+    * XML Location: Location of the xml files, within the xml folder (data/xml)
+    * 1fp32igvpoxnb521p9dqypak5cal0xv0: Location of the download url.
+    * Automatic download timeout: If you don't want to wait 30s every file download or have to press a button.
+    * Get Unit Text Console Dump: Dumps text to console when a get unit is issued in text mode.
+    * Get Unit Default: Default mode(s) to run get unit in, if none are specified.
+    * Default Scale: Default scale for gifs and sprites.
+    * pngout: If you want to automatically pngout all images.
+    * render pngout: Option to disable pngout for renders if pngout is enabled. Mainly for past debugging
+    * Image Cleanup: deletes all the dot folders after making images if enabled.
+    * Unit directory: Directory for unnamed units
+    * working directory: Directory for working (Might not work)
+    * dump directory: Directory for dump mode.
+    * Named directories: If you want a separate directory for units with a translated name, enable this
+    * Remove duplicate folders: Forget what this does or if it even works.
+    * Named unit directory: The directory for units with a translated name if named directories is enabled.
+    * Printouts: A bunch of options to output feedback while a command is being issued.
+  * New unit script
+    * Sorter, easier to type name. (unit vs get_unit.lua)
+    * Allows for multiple units
+    * Allows for multiple modes.
+    * Allows for input of names in the unit translation file (Translations/Name.lua)
+    * Integrated illumini9's mass scale and gif make into the script.
+    * Added hentai content-graphics mode.
+    * Added page mode for generating general unit and stats pages. Manual error correction still needed.
+    * Added ability to dump images to a specific folder.
+    * Added ability to generate just a single image-set (Base, CC, AW, AW2, AW2v1, AW2v2)
+    * Added ability to generate just a single image-type (Gif, Sprite, Icon, Render)
+    * added full mode to pretty much do everything.
+    * Probably some other stuff i forgot to mention.
+
+
+
+
+
+==Release 2==
+===2.0.0===
+* Added download_all.lua
+* Added get_unit.lua
+* Added get_skill.lua
+* Added get_ability.lua
+* parse_missions.lua now includes info about guest units
+* parse_missions.lua now includes details about quest terms
+* Rewrite of parse_unitstats.lua
+* parse_unitstats.lua now includes multiple levels for tokens and silvers
+* Significant speed optimization for xml document decompression
+* Chrome's b64 encoding prefix is now detected and automatically ignored
+* Updated map.txt and enemy_gfx.txt

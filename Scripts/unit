@@ -1,0 +1,204 @@
+-- unit (not lib)
+-- v1.0
+-- author: ShinyAfro
+
+local nametrans = require "lookup//localisation".name
+local config = require "lookup//config"
+local unitfunctions = require("wiki/unit")
+local hcg = require("wiki/hcg")
+local scene = require("wiki/scene")
+local out = config['Unit directory']
+local working = config['working directory']
+
+local units, args = ...
+local accepted_modes = {
+  ["text"] = true,
+  ["page"] = true,
+  ["image"] = true,
+  ["icon"] = true,
+  ["render"] = true,
+  ["sprite"] = true,
+  ["gif"] = true,
+  ["full"] = true,
+  ["legacy"] = true,
+  ["hcg"] = true,
+  ["quote"] = true,
+  ["skill"] = true,
+  ["ability"] = true,
+  ["scene"] = true,
+}
+
+if not primary_mode then
+  if config and config['Get Unit Default'] then
+	if not args then
+      args = config['Get Unit Default']
+	end
+  end
+end
+
+if args then
+  local temp = {}
+  for arg in args:gmatch('([%a%d]+)') do
+    arg = string.lower(arg)
+    temp[arg] = true
+	if accepted_modes[arg] then primary_mode = true end
+  end
+  args = temp
+end
+
+if not args['base'] and not args['cc'] and not args['aw'] and not args['aw2'] then
+  args['base'] = true
+  args['cc'] = true
+  args['aw'] = true
+  args['aw2'] = true
+end
+
+if config['Named directories'] == true and config['Remove duplicate folders'] == true and nametrans(id) then
+  local cmd = io.popen('cmd /C dir '..out..' /B', "r")
+  local h = cmd:read('*a')
+  cmd:close()
+  if h:find(string.format("%03d", id)) then
+	os.execute('cmd /C ren "'..out..string.format("%03d", id)..'" "'..nametrans(id)..'"')
+	print('File renamed')
+	if config['Named unit directory'] ~= config['Unit directory'] then
+	  os.execute('cmd /C move "'..out..nametrans(id)..'" "'..out..'"')
+	  print('File moved')
+	end
+  end
+end
+
+function getunit(id)
+  for mode, _ in pairs(args) do
+    mode = mode:lower()
+    if mode == "text" then
+      print(unitfunctions.textdump(id, out, working, args))
+	  if config['Mode Completion Printouts'] and nametrans(id) then print(nametrans(id)..' completed. (text)') elseif config['Mode Completion Printouts'] then print (tostring(id)..' completed. (text)') end
+    elseif mode == "page" then
+      unitfunctions.pagedump(id, out, working)
+	  if config['Mode Completion Printouts'] and nametrans(id) then print(nametrans(id)..' completed. (page)') elseif config['Mode Completion Printouts'] then print (tostring(id)..' completed. (page)') end
+    elseif (mode == "image") or (mode == "icon") or (mode == "render") or (mode == "sprite") or (mode == "gif") then
+      unitfunctions.imagedump(id, out, working, args)
+	  if config['Mode Completion Printouts'] and nametrans(id) then print(nametrans(id)..' completed. (image)') elseif config['Mode Completion Printouts'] then print (tostring(id)..' completed. (image)') end
+    elseif mode == "full" then
+      unitfunctions.textdump(id, out, working, args)
+      unitfunctions.pagedump(id, out, working)
+      unitfunctions.imagedump(id, out, working, args)
+	  hcg.parse(id)
+	  if config['Mode Completion Printouts'] and nametrans(id) then print(nametrans(id)..' completed. (full)') elseif config['Mode Completion Printouts'] then print (tostring(id)..' completed. (full)') end
+    elseif mode == "hcg" then
+	  hcg.parse(id, args)
+	elseif mode == "quote" then
+	  print(unitfunctions.just_quotes(id, args))
+	elseif mode == "skill" then
+	elseif mode == "ability" then
+	elseif mode == "scene" then
+	  scene.parse(id, args)
+    end
+  end
+end
+
+local function parseunits()
+  local updated_names
+  local temp = {}
+  local unittable = {}
+  for id, name in pairs(nametrans(nil, nil, true)) do
+	name = name:gsub(' ', '_')
+	name = name:gsub('%s', '')
+	temp[name:lower()] = id
+  end
+   
+  --range commands
+  if units:lower():match("#range:") then
+    local temp = ""
+    local units_trimmed = units:lower():match("#range:(.*)")
+	if units_trimmed:match("all") then
+	  local i = 1
+	  while nametrans(i) do
+		temp = temp.." "..i
+	    i = i + 1
+	  end
+	elseif units_trimmed:match("%d*%-%d*") then
+	  local start_range = units_trimmed:match("(%d*)%-%d*")
+	  local end_range = units_trimmed:match("%d*%-(%d*)")
+	  for i = start_range, end_range do
+	    i = math.floor(i)
+		temp = temp.." "..i
+	  end
+	end
+	temp = string.gsub(temp, '^%s*(.-)%s*$', '%1')
+	units = temp
+  end
+  
+  --Translate function
+  for unit in units:gmatch('([^ ]+)') do
+    if unit:find('%d') and (nametrans(tonumber(unit))==".*Unknown*." or nametrans(tonumber(unit))==nil) and unitfunctions.exists(tonumber(unit)) then 
+      io.write('A new unit named "'..(unitfunctions.get_name(tonumber(unit), true) or "(Error: Name not found?)")..'" has been found, Do you wish to enter a localised name? (Y/N)')
+      if io.read():lower():match('y') == "y" then
+        updated_names = true
+        io.write("Enter name:")
+        local name = io.read()
+        if tonumber(unit) > #nametrans(nil,nil,true)+1 then
+          for i = #nametrans(nil,nil,true)+1, tonumber(unit)-1 do 
+            nametrans(i,".*Unknown*.")
+          end
+        end
+        nametrans(tonumber(unit),name)
+      end
+    end
+  end
+   
+   --Update name.txt
+   if updated_names then
+    local out = ""
+    for k, v in pairs(nametrans(nil,nil,true)) do
+      if v == ".*Unknown*." then v = "" end
+      out = out .. v:gsub('_', ' ') .. "\n"
+    end
+    h = io.open('Data\\localisation\\Name.txt', 'w')
+    h:write(out)
+    io.close(h)
+  end
+  
+  --Name -> UID
+  for unit in units:gmatch('([^ ]+)') do
+    if (unit:find('%d') == nil) and (temp[unit:lower()]) then  
+	    unit = unit:gsub('%s', '')
+      unit = temp[unit:lower()]
+	  elseif (unit:find('%d') == nil) then
+	    print('Error: Unit "'..unit..'" failed to be translated and will not be downloaded.')
+      unit = nil
+    end
+    if unit then 
+      if unitfunctions.exists(tonumber(unit)) then
+        table.insert(unittable,unit)
+      else
+        print("Unit #"..unit.." does not exist.")
+      end
+    end
+  end
+  for i, unit in pairs(unittable) do
+    id = assert(tonumber(unit))
+    getunit(id)
+  end
+end
+
+if units and #units>0 then
+  parseunits()
+else
+  io.write('No units specified. Do you wish to scan for new units? (Y/N)')
+  if io.read():lower():match('y') then
+    local i = 1
+    local temp = ""
+    while unitfunctions.exists(i) do
+      if nametrans(i) == nil then temp = temp .. " " .. i end
+      i = i + 1
+    end
+    if #temp>0 then
+      print('New units located (id):'..temp)
+      units = temp
+      parseunits()
+    else
+      print('No new units found.')
+    end
+  end
+end

@@ -1,0 +1,100 @@
+local loc_harchive = 'list.har'
+local config = require "lookup//config"
+local _LookupCore = require("lookup/core")
+local file = require("lib/file")
+local dl = require("lib/download")
+local filelist_lib = require("wiki/filelist")
+
+local function archive_filelist(filelist_new)
+  if not file.dir_exists(out) then
+    file.make_dir(out)
+  end
+  local h =  assert(io.open(out .. "\\files.txt", 'rb'))
+  local filelist_old = assert(h:read('*a'))
+  assert(h:close())
+  if filelist_new ~= filelist_old then
+    h = assert(io.open(out .. "\\files_old.txt", 'wb'))
+    assert(h:write(filelist_old))
+    assert(h:close())
+  end
+end
+
+local function get_filelist()
+  if not file.dir_exists(out) then
+    file.make_dir(out)
+  end
+  local list = _LookupCore.filelist()
+  local files_text = dl.getlist_raw(list)
+  return files_text
+end
+
+local function save_filelist(filelist)
+  h = assert(io.open(out .. "\\files.txt", 'wb'))
+  assert(h:write(filelist))
+  assert(h:close())
+end
+
+local function get_http_archive()
+  if not file.dir_exists('Data\\XML') then
+    file.make_dir('Data\\XML')
+  end
+  if not file.dir_exists('Data\\list') then
+    file.make_dir('Data\\list')
+  end
+  h = io.open(loc_harchive, 'r')
+  local list = h:read('*a')
+  io.close(h)
+  return list
+end
+
+local function getxml(list, xml)
+  local url = 'https://millennium-war.net/'..xml
+  url = url:gsub('([%-%+%(%)%%%*%?%[%]%^%$])','%%%1')
+  local data = list:match('"method": "POST",[%A]-"url": "'..url..'",.-"content": ({[^}]+})')
+  data = data:match('"text": "([^"]+)"')
+  h = io.open('Data\\XML\\'..xml, 'w')
+  h:write(data)
+  io.close(h)
+end
+
+local function geturl(list)
+  local url = 'https://drc1bk94f7rq8.cloudfront.net/'
+  url = url:gsub('([%-%+%(%)%%%*%?%[%]%^%$])','%%%1')
+  local data = list:match(url..'[^/]+/1fp32igvpoxnb521p9dqypak5cal0xv0')
+  h = io.open('Data\\list\\URL.txt', 'w')
+  h:write(data)
+  io.close(h)
+end
+
+local function wipehar()
+  h = io.open(loc_harchive, 'w')
+  local list = h:read('*a')
+  io.close(h)
+end
+
+local args = ...
+if args then args = args:lower() else args = 'core' end
+
+if args:match('core') then 
+  if file.file_exists('list.har') then
+    local http_archive = get_http_archive()
+	if #http_archive>0 then
+      geturl(http_archive)
+      getxml(http_archive, 'GRs733a4')
+      getxml(http_archive, 'QxZpjdfV')
+	  wipehar()
+	  print('Core update complete.')
+	  if config['Update filelist'] == true then
+        local filelist = filelist_lib.get_filelist()
+        filelist_lib.archive_filelist(filelist)
+        filelist_lib.save_filelist(filelist)
+        filelist_lib.get_filelist_changes(filelist)
+	    print('Filelist update complete.')
+	  end
+	else
+      print('Error: list.har not valid. \nPlease place a valid list.har inside the root folder and try again.')
+	end
+  else
+    print('Error: list.har not found. \nPlease place a list.har inside the root folder and try again.')
+  end
+end

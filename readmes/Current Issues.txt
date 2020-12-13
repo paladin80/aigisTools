@@ -1,0 +1,18 @@
+parse_missions
+* Cannot output the tower missions
+* New events (ID:200XXX) have incorrect enemy outputs, they just count up from monster ID#1 onward repeatedly, even if that mission only has say, monsters #31-35
+* For Ootakemaru (500288) lv11+ specifically, reads completely wrong enemies, also dunno why there's a random goblin in there when it never shows up ingame
+
+
+
+unit
+*150 aff bonus not implemented with current formatting, also has 1.2x scaling when it shouldn't
+*Plat heroes have incorrect max level and scaling
+*Silvers are getting too many lines of stats, some error with the lv55 thing?
+*Missing some new affection types like -cost
+*Can't make pages for Akira's Fire/Sun tokens
+*Doesn't seem to output attack speed anymore for some units and classes (Arge, Ambrose)
+
+*Needs a way to translate affiliations
+*Summoner attack gifs are messed up without some manual input
+* Cannot output the assault missions (workaround is in parse_missions_assault

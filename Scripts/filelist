@@ -1,0 +1,9 @@
+-- filelist (Script)
+-- v1.0
+-- author: ShinyAfro
+local filelist_lib = require("wiki/filelist")
+
+local filelist = filelist_lib.get_filelist()
+filelist_lib.archive_filelist(filelist)
+filelist_lib.save_filelist(filelist)
+filelist_lib.get_filelist_changes(filelist)

@@ -1,0 +1,22 @@
+local skill = require("lib/skill")
+package.loaded.Config = dofile 'Config.lua'
+local config = require "Config"
+local dumploc = config['dump directory']
+
+local id, second = ...
+
+local ids
+if id == "influence" then
+  ids = skill.find_influence(assert(tonumber(second)))
+else
+  ids = {assert(tonumber(id))}
+end
+
+for index, id in ipairs(ids) do
+  local obj = skill.parse(id)
+  print(obj)
+  if index < #ids then print() end
+  local h = assert(io.open(dumploc .. "\\" .. id .. ".txt", 'w'))
+  assert(h:write(obj))
+  assert(h:close())
+end
