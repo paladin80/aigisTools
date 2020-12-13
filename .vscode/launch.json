@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "lua",
+      "request": "launch",
+      "stopOnEntry": true,
+      "program": "${workspaceFolder}/Scripts/unit",
+      "cwd": "${workspaceFolder}",
+      "path": "${workspaceFolder}/Scripts/?.lua",
+      "cpath": "${workspaceFolder}/?.dll",
+      "arg": ["904", "page"],
+      "consoleCoding": "utf8"
+    }
+  ]
+}
