@@ -285,8 +285,12 @@ local function get_classes(id)
         classes[i] = nil
       end
     end
+    -- :todo: update here when heroes get AW2
     if card.Rare >= 10 and card._AwakePattern == 0 then
-      classes = {classes[#classes]}
+      -- hack for hero classes don't follow rules
+      local awClass = classes[#classes]
+      awClass.DotNo = 2
+      classes = {awClass}
     end
     my_info.classes = classes
   end
