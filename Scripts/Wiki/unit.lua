@@ -752,21 +752,21 @@ local function parsewiki(id)
 	  magic_resist_class = 0
 	end
     local levels = get_interesting_levels(id, class)
+    local n = 0
     
     for _, level in ipairs(levels) do
-      local hp, hpa = stat.get(level, class.MaxLevel, card.MaxHPMod, class.InitHP, class.MaxHP)
-      local atk, atka = stat.get(level, class.MaxLevel, card.AtkMod, class.InitAtk, class.MaxAtk)
-      local def, defa = stat.get(level, class.MaxLevel, card.DefMod, class.InitDef, class.MaxDef)
-	  if n and n == 1 then
-		n = nil
-		local maxlevel = ""
-		if cc < 3 then maxlevel = format_stats(cc,'MaxLvl',level,7,0) end
-		statsdump = statsdump..format_stats(cc,'MaxHP',hp,7,6)..format_stats(cc,'MaxAtk',atk,7,6)..format_stats(cc,'MaxDef',def,7,6)..maxlevel..'\n'
-	  else
-		n = 1
-		local mr = tonumber(tostring((card.MagicResistance+magic_resist_class)):match('([^%.]+)'))
-		statsdump = statsdump..format_stats(cc,'MinHP',hp,7,6)..format_stats(cc,'MinAtk',atk,7,6)..format_stats(cc,'MinDef',def,7,6)..format_stats(cc,'Resist',mr,7,0)..'\n'
-	  end
+      local hp = stat.get(level, class.MaxLevel, card.MaxHPMod, class.InitHP, class.MaxHP)
+      local atk = stat.get(level, class.MaxLevel, card.AtkMod, class.InitAtk, class.MaxAtk)
+      local def = stat.get(level, class.MaxLevel, card.DefMod, class.InitDef, class.MaxDef)
+      if n > 0 then
+        local maxlevel = ""
+        if cc < 3 then maxlevel = format_stats(cc,'MaxLvl',level,7,0) end
+        statsdump = statsdump..format_stats(cc,'MaxHP',hp,7,6)..format_stats(cc,'MaxAtk',atk,7,6)..format_stats(cc,'MaxDef',def,7,6)..maxlevel..'\n'
+      else
+        local mr = tonumber(tostring((card.MagicResistance+magic_resist_class)):match('([^%.]+)'))
+        statsdump = statsdump..format_stats(cc,'MinHP',hp,7,6)..format_stats(cc,'MinAtk',atk,7,6)..format_stats(cc,'MinDef',def,7,6)..format_stats(cc,'Resist',mr,7,0)..'\n'
+      end
+      n = n + 1
     end
     if not ranged then
       statsdump = statsdump..format_stats(cc,'Block',class.BlockNum,7,6)
