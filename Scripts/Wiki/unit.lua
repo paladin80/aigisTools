@@ -88,29 +88,30 @@ local function getrace(unitid) --Race function
   local Cards = xmldoc.getfile(nil, 'cards')
   local Cards = xml.parse(Cards)
   local Cards = xml.totable(Cards)
+  local card = Cards[unitid]
  
   local SystemText = dl.getfile(nil, 'SystemText.atb')
   local SystemText = parse_al.parse(SystemText)
   
   function GetText(TypeID, FileName)
-    local TypeID = Cards[unitid][TypeID]
+    local TypeID = card[TypeID]
     local text = dl.getfile(nil, FileName)
     local obj = parse_al.parse(text)
-	local TextID = 0
+  	local TextID = 0
 	
-	for k, v in pairs(obj) do
-	  if k == 'header' or k == 'type' then else
-		if v[2]['v'] == TypeID then
-	      TextID = v[3]['v']
-		end
-	  end
+    for k, v in pairs(obj) do
+      if k == 'header' or k == 'type' then else
+        if v[2]['v'] == TypeID then
+            TextID = v[3]['v']
+        end
+      end
     end
 	
-	if TextID == 0 or TextID == "0" or TextID == nil then
-	  return "N/A"
-	else
-	  return SystemText[TextID+1][2]['v']
-	end
+    if TextID == 0 or TextID == "0" or TextID == nil then
+      return "N/A"
+    else
+      return SystemText[TextID+1][2]['v']
+    end
   end
   
   local out = {}
@@ -119,6 +120,8 @@ local function getrace(unitid) --Race function
   out["assign"] = GetText("Assign", 'PlayerAssignType.atb')
   out["identity"] = GetText("Identity", 'PlayerIdentityType.atb')
   out["blood"] = GetText("Blood", 'PlayerBloodType.atb')
+  out["genus"] = GetText("Genus", 'PlayerGenusType.atb')
+  out["roots"] = card.RootsID
   
  return out
 end  
@@ -430,6 +433,12 @@ local function parse(id)
   else
     out = out .. "Bloodline: " .. Affiliations["blood"] .. "\n\n"
   end
+  if racetrans(Affiliations["genus"]) then
+    out = out .. "Genus: " .. racetrans(Affiliations["genus"])..' ('..Affiliations["genus"] .. ")\n\n"
+  else
+    out = out .. "Genus: " .. Affiliations["genus"] .. "\n\n"
+  end
+  out = out .. "Roots: " .. Affiliations["roots"] .. "\n\n"
   
   -- overall parameters
   out = out .. "Magic resistance (base): " .. card.MagicResistance .. "\n"
@@ -1003,6 +1012,8 @@ local function parsewiki(id)
   local srace = (racetrans(Affiliations["race"]) or Affiliations["race"])
   local sassi = (racetrans(Affiliations["assign"]) or Affiliations["assign"])
   local sspec = (racetrans(Affiliations["identity"]) or Affiliations["identity"])
+  local sblood = (racetrans(Affiliations["blood"]) or Affiliations["blood"])
+  local sgenus = (racetrans(Affiliations["genus"]) or Affiliations["genus"])
   local sgender = string.lower(format.gender(card.Kind))
   statsout = statsout .. '\n'
   statsout = statsout .. format_stats(nil,"name", sname, 4,11)
@@ -1010,9 +1021,10 @@ local function parsewiki(id)
   statsout = statsout .. format_stats(nil,"rarity", srare, 6,0)
   statsout = statsout .. '\n'
   statsout = statsout .. format_stats(nil,"race", srace, 4,11)
-  if sassi ~= "N/A" and sspec == "N/A" then statsout = statsout .. format_stats(nil,"affiliation", sassi, 6,0) end
-  if sassi ~= "N/A" and sspec ~= "N/A" then statsout = statsout .. format_stats(nil,"affiliation", sassi, 6,9) end
+  if sassi ~= "N/A" then statsout = statsout .. format_stats(nil,"affiliation", sassi, 6,0) end
   if sspec ~= "N/A" then statsout = statsout .. format_stats(nil,"affiliation", sspec, 6,0) end
+  if sblood ~= "N/A" then statsout = statsout .. format_stats(nil,"affiliation", sblood, 6,0) end
+  if sgenus ~= "N/A" then statsout = statsout .. format_stats(nil,"affiliation", sgenus, 6,0) end
   statsout = statsout .. '\n\n'
   statsout = statsout .. statsdump
   

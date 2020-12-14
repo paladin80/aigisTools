@@ -4,6 +4,8 @@ Input
 Output
 Scripts/Data/XML
 files.txt
-Data
 list.har
 out
+Data/Cache
+Data/XML
+Data/list

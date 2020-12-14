@@ -1,0 +1,1114 @@
+Prince
+Soldier (Bow) A
+Russell
+Bandit Minion A
+Wilfred
+Soldier (Unit) A
+Julian
+Crave
+Garrett
+Bernard
+Roy
+Valerie
+Cyrus
+Mortimer
+Eunice
+Bella
+Elyse
+Figneria
+Mischa
+Lilia
+Cecily
+Dina
+Soma
+Alissa
+Harissa
+Carrie
+Sherry
+Bashira
+Nanaly
+Claire
+Iris
+Camilla
+Adele
+Belinda
+Betty
+Elaine
+Thetis
+Themis
+Sybilla
+Phyllis
+Bernice
+Calliope
+Daniela
+Dorca
+Fedora
+Berna
+Dahlia
+Cloris
+Despia
+Leeanne
+Cypria
+Clissa
+Cuterie
+Aina
+Sara
+Cyrille
+Nina
+Celia
+Florika
+Christia
+Conrad
+Jerome
+Barbastroff
+Soldier (Unit) B
+Soldier (Heavy) A
+Soldier (Bow) B
+Bandit Minion B
+Bergan
+Soldier (Heavy) B
+Soldier (Magic) A
+Soldier (Magic) B
+Leo
+Ars
+Hector
+Aria
+Victoria
+Gold Armor
+Mehlis
+Garania
+Dorania
+Lyla
+Stray
+Gellius
+Seria
+Christopher
+Mordiberte
+Monica
+Rachel
+Akane
+Saki
+Minerva
+Maribel
+Sakuya
+Hina
+Ryujin Soldier
+Gadoras
+Fleur
+Echidna
+Anya
+Odette
+Shizuka
+Kojurou
+Vincent
+Elizabeth
+Karma (Platinum)
+Karma (Black)
+Liddy
+Shiho
+Robert
+Yuyu
+Yurina
+Hien
+Spica
+Katie
+Olivier
+Marius
+Rosalie
+Lauren
+Atla
+Chydis
+Roana
+Lin
+Giovanni
+Maullo
+Uzume
+Sanosuke
+Len
+Charlotte
+Palace
+Mikoto
+Gina
+Dorothy
+Platinum Armor
+Solano
+Nenya
+Victoire
+Ada
+Sasha
+Kagerou
+Hayate
+Foot Soldier
+Noel
+Kagura
+Pirate Minion
+Chloe
+Sophie
+Ninja (Unit)
+Stella
+Horus
+Verotte
+Marle
+Rikka
+Gustav
+Janna
+Marnie
+Marie
+Beatrica
+Farne
+Chizuru
+Azami
+Saria
+Ur
+Claudia
+Momiji
+Zola
+Gladys
+Shikioni
+Tamamo
+Desert Soldier
+Hashim
+Patra
+Asar
+Ballad
+Khuri
+Zaram
+Viera
+Sabine
+Rita
+Shuuka
+Xiao
+Aisha
+Zenobia
+Fran
+Anelia
+Imelia
+Waltz
+Ester
+Anna
+White Goblin (NPC)
+Grand Elder (NPC)
+Kaguya
+Percis
+Flamel
+Happy
+Memento
+Sword Skeleton
+Kururu
+Eliza
+Mel
+Jessica
+Matsuri
+Erun
+Ryuryu
+Dan
+Ricardo
+Niel
+Emilia
+Anemone
+Cornelia
+Dark Knight (Injured) (NPC)
+Elva
+Hana
+Grace
+Rorone
+Ertel
+Lizette
+Ehret
+Mia
+Liana
+Kongou Shikioni
+Agnes
+Lucille
+Dine
+Daisy
+Pupuru
+Tree of Life
+Corin
+Fuuka
+Strong Trap
+Trap
+Maurette
+Sue
+Hikage
+Naiad
+Kazuha
+Yojiro
+Saizou
+Fudou
+Eden
+Kikyou
+Abel
+Iroha
+Inari
+Nagi
+Estelle
+Miranda
+Charles
+Sandra
+Momo
+Black Armor
+Rion
+Erenia
+Paula
+Leda
+Sera
+Raichi
+Laurier
+Eva
+Gloria
+Fee
+Altair
+Suil
+Hellbeast Orthros
+Kanon
+Raven
+Verdinath
+Rubinas
+Reanbell
+Skeleton Lancer
+Joy
+Amanda
+Anita
+Patel
+Rozette
+Pippin
+Mitra
+Hellbeast Cerberus
+Metus (NPC)
+Lich (NPC)
+Meteor
+Ersha
+Cassis
+Sharon
+Zenmel
+Katina
+Isabelle
+Dirk
+Alice
+Ricola
+Bonbori
+Yuno
+Shirley
+Super-Strong Trap
+Louise
+Merone
+Thelma
+Nataku
+Eterna
+Danan
+Renarde
+Jungle Archer
+Gaga
+Fes
+Nadia
+Lieselotte
+Rakshasa
+Lythtis
+Dark Knight
+Prince (Sacred Equipment)
+Tigre
+Leona
+White Emperor (NPC)
+Junon
+Kaname
+Irene
+Totono
+Sarasa
+Sacred Tree of Life
+Mercenary
+Rainbow Armor
+Liebe
+Puniru
+Ingrid
+Fermi
+Kayou
+Melvina
+Faa
+Revy
+Metus
+Rilke
+Guardian Golem
+Sabrina
+Nina (Bonded)
+Celia (Bonded)
+Florika (Bonded)
+Towa
+Miruno
+Maya
+Cynthia
+Palfy
+Sukuha
+Leaf
+Rumaria
+Racua
+Nicholaus
+Sarah
+Parhelia
+Dwight
+Master Mercenary
+Rino
+Rinne
+Anna (Waitress)
+Calamity Averting Mirage
+Helena
+Supura
+Lahti
+Moltena
+Reshia
+Dolce
+Boris
+Mao
+Frederica
+Shota Prince (NPC)
+Kokoro
+Gretel
+Oscar
+Jake
+Amelie
+Miguel
+Maple
+Rösel
+Alicia
+Elias
+Margaret
+Sereina
+Machina
+Steam Tank
+Prim
+Prism Mirror
+Meiling
+Aida
+Siena
+Alegria
+Freude
+Goliah
+Mireille
+Nendoroid Sybilla
+Ralph
+Hibari
+Belzetta
+Ashera
+Fiore
+Lulu
+Senko
+Matilda
+Ignis
+Onyx
+Livre
+Imp
+Meredith
+Wendy
+Lien
+Shino
+Vivian
+Regina
+Decius (NPC) 
+Nevin
+Dorothea
+Erica
+Loretta
+Fire Elemental
+Lucia
+Itsuki
+Amy
+Musica
+Sariette
+Charme
+White Emperor
+Eric
+Clara
+Heath
+Lux
+Frey
+Georg
+Sabein
+Roza
+Elmira
+Viola
+Sieglinde
+Angeline
+Cait Sith
+Alissa (Christmas)
+Farah
+Fei
+Kibahime
+Lapis
+Anna (Swimsuit)
+Leeanne (New Year's)
+Soma (New Year's)
+Konoha
+Aoba
+Silvia
+Tokoyo
+Mist Clone
+Sandy
+Doula
+Prism Mirror (AW2)
+Barous
+Seven
+Koharu
+Sylseth
+Ulidem
+Xiao-Mei
+Reve
+Earth Elemental
+Yakumo
+Lei-Mei
+Hakunokami
+Bonbori (2)
+Amour
+Solare
+Mistel
+Motley
+Leora
+Kyuubi
+Haruka
+Air Elemental
+Young Prince (NPC)
+Dan (Aigis) (NPC)
+Kasumi
+Koyomi
+Clarice
+Darkness Elemental
+Bestla
+Bestla (NPC)
+Tifa
+Velty
+Great Toad
+Gordeaux
+Ramii
+Elene
+Advanced Fire Elemental
+Advanced Earth Elemental
+Advanced Air Elemental
+Advanced Darkness Elemental
+Socie
+Aix
+Barricade 1 (NPC)
+Barricade 2 (NPC)
+Riele
+Gladys (Bonded)
+Lepuru
+Fuuko
+Hellbeast Orthros (AW2v1)
+Hellbeast Orthros (AW2v2)
+Miyabi
+Daryun
+Narsus
+Farangis
+Artist's Masterpiece
+Arslan
+Cenote
+Water Elemental
+Advanced Water Elemental
+Tial
+Phyllis (Yukata)
+Rischelte
+Calamity Averting Mirage AW2v1
+Calamity Averting Mirage AW2v2
+Sayo
+Ibuki
+Royal Guard of the Distant Land
+Vanguard Tactician of the Distant Land
+Bowwoman of the Distant Land
+Young Nobleman of the Distant Land
+Bakeneko
+Elaine (Swimsuit)
+Daniela (Yukata)
+Paula (Swimsuit)
+Demon
+Lina
+Anatolia
+Teeny
+Calliope (Dress)
+Shade
+Mephisto
+Wurm
+Helmine
+Rute
+Aleese
+Forte
+Lateria
+Gold Armor (High Grade)
+Chibi Katie
+Chibi Nanaly
+Saval
+Golden Mimic
+Diera
+Misa
+Leifa
+Anna (Uniform)
+Jack O' Lantern
+Bombardment Point
+Blanche
+Chibi Carrie
+Chibi Despia
+Daki
+Phonia
+Eldora
+Luxe
+Nephty
+Prince (Keraunos)
+Damage Spot
+Prince (Childhood)
+Orochihime
+Charlotte (Christmas)
+Bernice (Christmas)
+Psyche
+Chibi Sarah
+Chibi Soma
+Christmas Tree of Protection
+Christmas Tree of Exorcism
+Prince (Desert)
+Tenma
+Cypria (Christmas)
+Friede
+Tsubasa
+Sacred Tree of Life (AW2v1)
+Sacred Tree of Life (AW2v2)
+Placere
+Anri
+Kurama
+Elyse (New Year's)
+Katie (New Year's)
+Iris (New Year's)
+Chibi Shizuka
+Chibi Kayou
+Proto-Golem
+Lan-Fa
+Shelt
+Sill
+Ema
+Kyouka Suigetsu
+Chibi Olivier
+Chibi Alicia
+Charmy
+Rindou
+Hanny
+Alice (Valentine's)
+Rino (Valentine's)
+Ryuryu (Valentine's)
+Linaria
+Carat
+Duo
+Salus
+Sharqi
+Chibi Momo
+Chibi Frederica
+Dolly
+Ballista
+Heavy Ballista
+Wonder Heart
+Taigong Wang
+Prince (Beast)
+Saris
+Anna (Idol)
+Shu-Xian
+Corpse Marionette
+Mehlis (School)
+Nenya (School)
+Giovanni (School)
+Chibi Bernice
+Chibi Cornelia
+Lehren
+Tyr
+Remii
+Kuuko
+Mei-Hua
+Chibi Mel
+Chibi Clissa
+Filine
+Liza
+Marika
+Diana
+Guren
+Imperial Knight
+Hyuna
+Prisna
+D'Arc
+Jin-Guang Sheng-Pu
+Jin-Guang Sheng-Pu (Clone)
+Awakened Jin-Guang Sheng-Pu (Clone)
+Julia
+Lumian
+Chibi Chizuru
+Chibi Berna
+Lychnos
+Sephire
+Rinne (Bride)
+Farne (Bride)
+Nakia
+Chibi Rino
+Chibi Sophie
+Prince (Giant)
+Belphe
+Carrie (Swimsuit)
+Holly
+Sonken Bundai
+Sonken Chuubo
+Kan'u
+Shokatsuryou
+Chou'un
+Chibi Erun
+Chibi Eterna
+Kongou Shikioni (AW2)
+Shushu
+Nanaly (Yukata)
+Khuri (Swimsuit)
+Aquamarie
+Plaisir
+Benibotan
+Rovinia
+Longji Gongzhu
+Chibi Mehlis
+Chibi Alice
+Shuten Douji (NPC)
+Yukihime
+Ice Elemental
+Advanced Ice Elemental
+Lumedia
+Picky
+Mine
+Landmine
+Improved Landmine
+Melabyss
+Chibi Cecily
+Chibi Altair
+Early
+Noire
+Pumpkin King
+Verotte (Halloween)
+Karma (Halloween)
+Pumpkin Knight
+Diane
+Ban
+Elizabeth (NNT)
+Meliodas
+King
+Elizabeth of Blessings
+Prince (Wind Guardian)
+Candy
+Hammer User of the Foreign Land
+Bandit of the Foreign Land
+Healer of the Foreign Land
+Knight of the Foreign Land
+Fairy of the Foreign Land
+Blessed Person of the Foreign Land
+Calope
+Juubei
+Chibi Spica
+Chibi Elyse
+Quill
+Kibashuu
+Xing-Fu
+Barbara
+Kyouka Suigetsu AW2v1
+Kyouka Suigetsu AW2v2
+Natalie
+Christa
+Tanya
+Aurora
+Vine
+Shadia
+Happy (5th Anniversary)
+Chibi Lapis
+Risley
+Emelda
+Ariel
+Lilica
+Dulphia
+Chibi Themis
+Chibi Mireille
+Tamami
+Camilla (Christmas)
+Cornelia (Christmas)
+Kanon (Christmas)
+Pirate Minion (Sword)
+Pirate Minion (Gun)
+Rozette (New Year's)
+Kibahime (New Year's)
+Totono (New Year's)
+Chibi Dorothy
+Chibi Mikoto
+Karin
+Zilva
+Thunder Elemental
+Advanced Thunder Elemental
+Izuna
+Homura
+Meliusiana
+Chibi Prince
+Spiria
+Chibi Chloe
+Chibi Amanda
+Marnie (Valentine's)
+Sophie (Valentine's)
+Leaf (Valentine's)
+Sonia
+Minette
+Soleil
+Suiren
+Arietta
+Bonbori
+Bonbori
+Bonbori
+Bonbori
+Bonbori
+Bonbori
+Bonbori
+Bonbori
+Bonbori
+Lilu
+Char
+Battle Tank
+Battle Tank MKII
+Jacqueline
+Mammon
+Chibi Liddy
+Chibi Nataku
+Xenia
+Prince (Einherjar)
+Heroic Spirit
+Shinato
+Wangfei Ren
+Dark Prince (NPC)
+Dark Anna (NPC)
+Goblin (NPC)
+Orc Warrior (NPC)
+High Orc Warrior (NPC)
+Lich (NPC)
+Red Flying Demon (Cannon) (NPC)
+Prince (Dark)
+Adelaide
+Chloe (School)
+Towa (School)
+Mischa (School)
+Ricardo (School)
+Chibi Solano
+Chibi Ingrid
+Plume
+Estrie
+Fistia
+Lady Demon
+Archdemon
+Viktor
+Meer
+Hilde
+Weiss
+Eleonora
+Pleise
+Chibi Matsuri
+Chibi Cuterie
+Skylle
+Eir
+Dummy 1
+Dummy 2
+April
+Dummy 3
+Iron Golem
+Hatsune
+Fluffy
+Umbre
+Evil Eye
+Advanced Evil Eye
+Goethe
+Lupin
+Lovecraft
+Faust
+Tale
+Chibi Aisha
+Chibi Iris
+Sebastian
+Improved Sebastian
+Alma
+Yuffe
+Berna (Bride)
+Olivier (Bride)
+Alicia (Bride)
+Orihime
+Chibi Ibuki
+Chibi Zenobia
+Lapis (Swimsuit)
+Silvia (Swimsuit)
+Mikoto (Swimsuit)
+Dolce (Swimsuit)
+Sandra (Swimsuit)
+Rita (Swimsuit)
+Miruno (Swimsuit)
+Maya (Swimsuit)
+Shadow
+Sol
+Water Clone
+Pirika
+Master Mercenary AW2
+Mercenary Gunner
+Mithria
+Fleurio
+Sousou
+Ryofu
+Bachou
+Houtou
+Ryuubi
+Chibi Charlotte
+Chibi Dummy
+Chibi Moltena
+Honey
+Fuuko (Yukata)
+Ramii (Yukata)
+Chibi Jin-Guang Sheng-Pu
+Prototype Ballista (NPC)
+Chibi Jin-Guang Sheng-Pu (Clone)
+Mist Clone (AW2v1)
+Mist Clone (AW2v2)
+Water Clone (AW2v1)
+Water Clone (AW2v2)
+Erlang Shen
+Mao (Yukata)
+Tongtian Jiaozhu (Fake)
+Sagiri
+Chibi Towa
+Chibi Konoha
+Ilios
+Hu Ximei
+Shaina
+Pickle
+Maryfa
+Setsuna
+Floga
+Setsuna (Clone)
+Setsuna (Clone) AW
+Setsuna (Clone) AW
+Place Enchantment 1
+Filo
+Chibi Kyuubi
+Chibi Paula
+Despia (Halloween)
+Eden (Halloween)
+Pumpkin Carriage
+Renarde (Halloween)
+Eleka
+Dummy Spirit
+Florika (Hero Bonds)
+Celia (Hero Bonds)
+Cyrille (Bonded)
+Heroic Naiad
+Florika (Hero Skills)
+Celia (Hero Skills)
+Florika (Skills)
+Celia (Skills)
+Nina (Skills)
+Cyrille (Skills)
+Gold Armor (Highest Grade)
+Solais (Black)
+Solais (Platinum)
+Yuugen (Black)
+Yuugen (Platinum)
+Atnates (Black)
+Atnates (Platinum)
+Target Marker
+Life-Sized Queen Doll
+Luvea
+Katara
+Chibi Dorothea
+Chibi Leeanne
+Heios
+Demon
+Aleida
+Patricia
+Ernesta
+Krasil
+Sanara
+Barricade
+Heavy Barricade
+Geotoken (Platinum)
+Reflet
+Leone
+Lily
+Place Enchantment 2
+Prince (Hero King)
+Light Elemental
+Advanced Light Elemental
+Happy (6th Anniversary)
+Ertel (Christmas)
+Chibi Silvia
+Chibi Maple
+Suzune
+Duo (Christmas)
+Solano (Christmas)
+Raijin (Illusion)
+Fuujin (Illusion)
+Harmonia
+Grimm
+Orochihime (New Year's)
+Eldora (New Year's)
+Junon (New Year's)
+Fuuka (New Year's)
+Chibi Sylseth
+Chibi Pippin
+Latour
+Prince (Four Gods)
+Life-Sized Kuroko Doll
+Delight
+Maou's Shadow
+True Maou's Shadow
+Claris Zeinburg
+Shinomiya Komachi
+Shiro
+Hanada
+Dark Elf Mage
+Augusta
+Chibi Diera
+Chibi Rozette
+Aix (Valentine's)
+Emelda (Valentine's)
+Sharqi (Valentine's)
+Buleria
+Tarania
+Saoshu
+Eithne
+Chibi Shu-Xian
+Ultimate Trap
+Isambard
+Chibi Machina
+Chibi Sabrina
+Oviely
+Rocket Trooper Token
+Risley (Hot Springs)
+Leeanne (Hot Springs)
+Shushu (Hot Springs)
+Eris
+Tsugumi
+Anri (School)
+Yukihime (School)
+Raichi (School)
+Chibi Khuri
+Chibi Teeny
+Mortimer (April Fools')
+Halina
+Katrina
+Battle Drone
+Isla
+Gertrude
+Stealthed Battle Drone
+Nicole
+Energy Athanor
+Rubedo's Athanor
+Ethnea
+Chibi Wurm
+Chibi Leona
+Sumire
+Leticia
+Bearca
+Finan
+Sanara (Black)
+Tuan (Black)
+Tuan (Platinum)
+Geotoken (Black)
+Chibi Elaine
+Chibi Fiore
+Diera (Bride)
+Eterna (Bride)
+Wedding Cake
+Suiren (Bride)
+Rikka (Bride)
+Ganimard
+Grimoire
+Mushiko
+Mushi
+Yashima
+Chibi Anri
+Chibi Clarice
+Kyuubi (Swimsuit)
+Eleonora (Swimsuit)
+Sieglinde (Swimsuit)
+Frey (Swimsuit)
+Lieselotte (Swimsuit)
+Leona (Swimsuit)
+Leora (Swimsuit)
+Tenko Clone
+Tenko Clone AW
+Life-Sized Goddess Adamas Doll
+Colum
+Tsumuji
+Diana (Swimsuit)
+Aurora (Swimsuit)
+Mephisto (Swimsuit)
+Natalie (Swimsuit)
+Meer (Swimsuit)
+Elias (Swimsuit)
+Roza (Swimsuit)
+Chibi Mephisto
+Chibi Lieselotte
+Spiria (Yukata)
+Fermi (Yukata)
+Regina (Yukata)
+Krehl
+Noma
+Prince (Female)
+Goblin Flying Puppet (Mecha Queen)
+Chibi Tenma
+Chibi Liana
+Zhao Hongming
+Mary
+Taopao
+Canaria Sisters
+Yamabuki
+Chibi Augusta
+Hayase
+Hayase AW
+Kishima
+Kishima AW
+Liban
+Junior Deep Sea Soldier
+Tabitha
+Marsi
+Byakusen
+Renge
+Tomoe
+Akira
+Chibi Dina
+Chibi Minerva
+Mountain Talisman
+Great Summit Talisman
+Fireball Talisman
+Sunlight Talisman
+Pure Spring Talisman
+Mizuchi
+Edo (NPC)
+Pedra
+Memento (Halloween)
+Livre (Halloween)
+Umbre (Halloween)
+Pumpkin Deus
+Hawk-Winged Birdman Soldier
+Falcon-Winged Birdman Archer
+Rhyno
+Ambrose (Black)
+Ambrose (Platinum)
+Arge (Black)
+Arge (Platinum)
+Sorcery Drone
+Bloom Petal
+Black Kite-Winged Birdman Soldier
+Aero
+Cedyna
+Chibi Sieglinde
+Chibi Angeline
+Cindy
+Pommier
+Tytto
+Orku
+Sky Warrior Token
+Sky Shooter Token
+Yoshino
+Tsukiko
+Hendrika
+Kahna
+Keitridge
+Pallios
+Tram (Platinum)
+Prince (Divine Spear)
+
+Chibi Tifa
+Chibi Junon

@@ -1,0 +1,52 @@
+人間 = Human
+獣人 = Beastfolk
+竜人 = Dragon
+エルフ = Elf
+ダークエルフ = Dark Elf
+ハーフエルフ = Half Elf
+ドワーフ = Dwarf
+ヴァンパイア = Vampire
+デーモン = Demon
+ハーフデーモン = Half daemon?
+天使 = Angel
+妖怪 = Youkai
+仙人 = Hermit
+オーク = Orc
+ねんどろいど = Nendoroid?
+ゴブリン = Goblin?
+鳥人 = Chojin?
+魚人 = Murloc?
+神 = God?
+聖霊 = Holy Spirit
+
+
+王国 = kingdom?
+白の帝国 = White empire?
+パルス王国 = Pulse Kingdom?
+遠国 = Far country?
+砂漠の国 = Desert country?
+〈七つの大罪〉 = Seven Deadly Sins?
+異郷の騎士団 = Knights of a foreign country?
+東の国 = Eastern Country
+
+
+アンデッド = Undead?
+機械 = Mechanical?
+魔術師 = Magicians
+弓兵 = Archers?
+
+
+プリンス = Prince
+姫 = Princess
+英傑 = Yingjie?
+
+
+お正月 = New Year
+バレンタイン = Valentine's
+学園 = Academy?
+ジューンブライド = Bride
+サマー = Summer?
+ハロウィン = Halloween
+クリスマス = Christmas
+ちび = Chibi
+温泉 = Hot springs

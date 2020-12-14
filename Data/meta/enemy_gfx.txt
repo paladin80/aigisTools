@@ -1,0 +1,1816 @@
+Bandit
+Wolf
+Goblin Soldier
+Gargoyle
+Red Drake
+Baphomet
+Living Armor
+Lich
+Green Ooze
+Goblin Hero
+Bandit Boss
+Black Wolf
+Goblin King
+Red Gargoyle
+Katie
+White Baphomet
+Black Axe Armor
+Gold Armor
+Yellow Ooze
+Silverwolf
+Soldier
+Heavy Infantry
+Valkyrie
+Rogue
+Archer
+Mage
+Healer
+Witch
+Gold Axe Armor
+Red Goblin Soldier
+Black Goblin Soldier
+Red Goblin King
+Black Goblin King
+Red Wolf
+Red Living Armor
+Black Gargoyle
+Black Drake
+Beastman Archer
+Advanced Valkyrie
+Ogre
+Red Ogre
+Black Ogre
+Princess
+Shadow
+Platinum Armor
+Minerva
+Clissa
+Dina
+Grace
+Black Goblin Wolf Rider (Ranged)
+Black Goblin Wolf Rider (Melee)
+Nanaly CC
+Despia
+Goblin Archer
+Goblin Mage
+Desert Soldier
+White Axe Armor
+Red Goblin Hero
+Black Goblin Hero
+Black Goblin Archer
+Black Goblin Mage
+Worm
+Red Worm
+Fuujin
+Fuujin (Walking)
+Red Goblin Archer
+Red Goblin Mage
+Goblin Wolf Rider
+Red Goblin Wolf Rider
+Red Demon
+Black Archdemon
+Mummy King
+Gazer
+Mummy
+Roper
+Desert Lizard Spearman
+Demon Mage (Ranged)
+Demon Mage (Melee)
+Desert Lizard Swordsman
+Desert Lizard Axethrower
+Scorpion
+Mummy Mage
+Red Cannon Armor
+Werewolf
+Lizard Spearman
+Dragon Soldier
+Red Dragon Mage
+Dragon King
+Lizard Swordsman
+Lizard Knight
+The Grand Elder
+Green Dragon Mage
+Lizard Axethrower
+Skeleton
+Skeleton Swordsman
+Skeleton Lancer
+Lesser Demon
+Lilia (Awakened)
+Greater Demon
+Lucille (Ranged)
+Lucille (Melee)
+Paralysis Ninja
+Ninja (Fast)
+Ninja Master
+White Ninja (Stealth)
+Flying Ninja
+Kite Ninja
+Red Flail Goblin
+White Ninja (Running)
+Goblin Bomber
+Red Goblin Bomber
+Small Treant
+Large Treant
+Dark Elf Archer
+Dark Elf Mage
+Dark Elf Avenger
+Manticore (Tail Attack)
+Manticore (Bite Attack)
+Black Goblin Bomber
+Corin
+Eden
+Lesser Vampire
+Greater Vampire
+Gold Werewolf
+Bat
+Goblin Zombie
+Stone Golem
+Vampire Lord
+True Vampire Lord (Ranged)
+True Vampire Lord (Melee)
+Fran
+Khuri
+Elizabeth
+Sue
+Preta
+Blue Oni (Youkai)
+Red Oni (Youkai)
+Black Oni (Youkai)
+Ochimusha Swordsman
+Ochimusha Swordsman (Berserk)
+Helmeted Ochimusha Swordsman
+Helmeted Ochimusha Swordsman (Berserk)
+Ochimusha Archer
+Helmeted Ochimusha Archer
+
+
+Crow Tengu (with staff)
+Crow Tengu (without staff)
+Kamaitachi
+Dorotabo
+Black Worm
+Sybilla AW
+Aisha AW
+Saki AW
+Dine AW
+Blue Snowman
+Red Snowman
+Small Blossoming Treant
+Large Blossoming Treant
+Iron Golem (Melee)
+Iron Golem (Ranged)
+Abel (Ranged)
+Abel (Melee)
+Pegasus Rider
+Emilia
+Rorone
+Eliza
+Waltz
+Rita
+Momiji
+Stella AW
+Liddy AW
+Ester AW
+Nurarihyon
+Foot Soldier
+Ninja Master
+Nagi
+Flying Ninja (Switch to Ninja)
+Ushi-Oni
+Ninja (Slow)
+Spirit Armor
+Pink Heavy Armor
+Orange Heavy Armor
+Mage Armor
+Miranda (Fast Attack)
+Miranda (Slow Attack)
+Green Oni
+Red Oni
+Black Oni
+Ifrit
+Red Flying Demon
+Red Flying Demon (Drill)
+Black Flying Demon
+Red Dragon
+Red Dragon (Walking)
+Yellow Preta
+Red Crow Tengu (with staff)
+Red Crow Tengu (without staff)
+Pumpkin
+White Archdemon
+Red Crystal Guardian
+Green Crystal Guardian
+Horus
+Old Majin Amon
+Old Majin Amon (Second Form)
+Giovanni
+Sanosuke
+Mortimer CC
+Eunice
+Conrad
+Barbastroff AW
+Cyrus AW
+Blue Crystal Guardian
+Blue Ooze
+Blue Oni
+Maou Garius (Shadow)
+Black Scorpion
+Charlotte
+Maou Garius (Spirit)
+Chimera (Dragon Attack)
+Chimera (Lion Attack)
+Mithril Ooze
+Black Dragon Elder
+Gustav
+Automata
+Gun Automata
+Mithril Golem (Melee)
+Mithril Golem (Ranged)
+Broken Armored Soldier
+Raijin
+Raijin (Walking)
+Green Dragon
+Green Dragon (Walking)
+Blue Dragon
+Blue Dragon (Walking)
+Rion
+Fee
+Garania AW
+Dan
+Zaram
+Gellius AW
+Shiho
+Chloe
+Armored Soldier
+Niel
+Sophie (Awakened)
+Pirate
+Green Sahagin (Swimming)
+Sahagin (Swimming)
+Gillman (Swimming)
+Gloria
+Gloria (Secret Skill)
+Amon's Servant
+Majin Amon
+Majin Amon Form 2
+Yeti
+Snow Wolf
+Armored Axerider
+Greater Demon
+Yurina (Awakened)
+Orthros [1]
+Kanon (Fast Attack)
+Mel
+Janna (Awakened)
+Percis
+Horse Archer
+Heavy Armor Knight
+Kanon (Slow Attack)
+Verdinath
+Ancient Purple Demon
+Ancient Blue Demon
+Dark Knight
+Mage (Alternate)
+Red Cultist
+Black Cultist
+Blue Cultist
+Raven
+Holy Spirit
+Carrie (Awakened)
+Elva
+Yurina
+Themis
+Lilia (Awakened)
+Lilia (Awakened)
+Olivier
+Cellia (Awakened)
+Lin
+Gina (Awakened)
+Verotte
+Suil
+Sue (Awakened)
+Rion (Awakened)
+Belzebuth's Servant
+Kibashuu
+Kibashuu (Slow)
+Green Sahagin
+Green Gillman
+Sahagin
+Gillman
+Ghost Sailor Swordswoman
+Ghost Sailor Gunner
+Dragon Zombie (Claw Attack)
+Metus
+Dragon Zombie (Breath Attack)
+Reanbell (Slash Attack)
+Reanbell (Gun Attack)
+Green Skeleton Cavalry
+Dragon Knight Zombie
+Majin Furfur
+Majin Furfur Form 2
+Furfur's Servant
+Greater Demon [2]
+Red Skeleton Cavalry
+Demon Cultist
+Kibashuu (Alt Pose)
+Red Cultist (Demon Transition)
+Orc Warrior
+Orc Warrior (Berserk)
+Imperial Soldier
+Thetis CC
+Red Crystal
+Greater Demon [3]
+Maid Golem
+Wood Golem
+Odette
+Ada
+Yellow Crystal
+Blue Crystal
+Axe Maid Golem (Melee)
+Axe Maid Golem (Ranged)
+Isabelle
+Isabelle (Flying)
+
+Imperial Pegasus Knight (Flying)
+Imperial Pegasus Knight
+Witch [2] (?)
+Orc Dagger Thrower
+Orc Dagger Thrower (Berserk)
+Orc Mage
+Orc Mage (Berserk)
+Orc Standard Bearer
+
+Orc Commander
+Orc Commander (Berserk)
+High Orc Warrior
+High Orc Warrior (Berserk)
+Black Mace Armor
+Palace
+King of the Dead
+Black Crossbow Armor
+Yuno CC
+Dark Yuno
+Black Mage Armor
+Pumpkin Knight
+Pumpkin King
+Dracolich (Melee)
+Dracolich (Ranged)
+Imelia AW
+Lieselotte
+Doppelganger
+High Orc Commander
+High Orc Commander (Berserk)
+Armored Gun Soldier (Automata)
+Prince
+Mehlis AW Old
+Ars (Doppel?)
+Roy (Doppel?)
+Gellius
+Garania (Doppel?)
+Rita (Doppel?)
+Nanaly (Doppel?)
+Soldier (Doppel?)
+Archer (Doppel?)
+Mage (Doppel?)
+Valkyrie (Doppel?)
+Cellia (Doppel?)
+Automata
+Automata (Gun)
+Armored Goblin
+Dark Elf Rune Fencer (Melee)
+Dark Elf Rune Fencer (Ranged)
+Gadoras
+Mummy King (Fast)
+Armored Cyclops
+Nurarihyon (Sword)
+Kibashuu (Claw) (Fast)
+Kibashuu (Claw) (Slow)
+Red Armored Goblin
+High Orc Dagger Thrower
+High Orc Dagger Thrower (Berserk)
+High Orc Mage
+High Orc Mage (Berserk)
+Golden Greater Demon
+Golden Greater Demon
+Cerberus
+Archdemon Swordsman
+Archdemon Swordsman
+Ballad
+Green Assassin
+Green Assassin (Crossbow)
+Green Minotaur
+Red Minotaur
+Roana
+Black Captain
+Black Armored Goblin
+Shuten Douji
+Shuten Douji Form 2
+Black Pirate
+Black Assassin
+Black Assassin (Crossbow)
+Green Assassin
+Black Assassin
+Maribel
+Black Dragon
+Black Dragon (Walking)
+Sarasa CC
+Armored Bowrider
+Decius (Ranged)
+Decius (Melee)
+Troll
+Giant Blue Slime
+Red Makai Ant
+Makai Ant
+Black Makai Ant
+Green Slime
+Red Slime
+Blue Slime
+Heavenly King of Imprisoning Fire (Kanaguma Douji)
+Dark Knight
+Ars
+Roy
+Belinda
+Ryuryu
+Makai Worm
+Lynn
+
+Ghost Soldier
+Red Skeleton Swordsman
+Memento
+Faa (Flying)
+Bull-Headed Demon
+Bull-Headed Demon King
+Bull-Headed Demon (Shadow)
+Bull-Headed Demon King (Shadow)
+Ape (Melee)
+Faa (Walking)
+Nataku (Walking)
+Ape (Stone Thrower)
+Nataku (Flying)
+Azami
+Black Chimera
+Black Chimera
+Black Ape (Melee)
+Black Ape (Stone Thrower)
+Nataku AW (Walking)
+Goblin Tank
+Goblin Tank
+Revy CC
+Goblin Queen
+Black Armored Goblin
+Red Armored Goblin
+Assistant Lich
+Orthros [2]
+Mounted Living Armor
+Crossbow Living Armor
+Greater Lich
+Black Cannon Armor
+Ertel
+Flamel CC
+Flamel CC
+Sera CC
+Sera CC
+Fermi CC
+Fermi CC
+Ertel
+Ehret CC
+Ehret CC
+Sabrina
+Green Sahagin
+Merman Lancer
+Merman
+Majin Vepar (lv.1-4)
+
+Beatrica
+Anelia AW
+Captain
+/No Stand (todo)
+Gillman
+Viera CC
+Sailor
+Sailor Gunner
+Elder Troll
+Junior Troll
+Sherry (Awakened)
+Lilia (Awakened)
+High Orc Standard Bearer
+Vampire Princess (Spinning)
+Yaohu
+Yaohu
+Black Yaohu
+Black Yaohu
+Majin Furfur (lv.1-4)
+Red Drake
+Red Makai Ant (Hanging Up)
+Makai Ant (Hanging Up)
+Black Makai Ant (Hanging Up)
+Yaohu-xian
+Yaohu-xian (Flying)
+Hana
+Rumaria CC
+Nicholaus
+Gold Bat
+Vampire Duke
+Rumaria CC
+Rumaria CC (Sneaking)
+Rumaria CC (Sneaking)
+Vampire Princess
+Nicholaus
+Angel Mage
+Miruno AW
+Archangel
+Archangel Chief
+Niel
+Angel Mage
+Archangel Chief
+Majin Amon (lv.1-4)
+Salamander
+Archangel (Alt Sprite)
+Majin Amon (Black)
+Majin Amon Form 2 (Black)
+Decius
+Mecha Decius
+Mecha Decius (Sword)
+Black Mace Armor
+Armored Bow Knight
+Black Mage Armor
+Red Goblin Tank (Melee)
+Red Goblin Tank (Ranged)
+Helena CC
+Reshia AW
+Fire Elemental
+Lyla AW Old
+Decius
+Green Crystal
+Rakshasa's Servant
+Rakshasa's Servant
+Heavenly King of Overpowering Winds
+
+Chimera
+Paralysis Demon
+Black Goblin Boar Rider
+Chronodemon (Ranged)
+Chronodemon (Melee)
+Goblin Soldier
+Red Demon
+Black Archdemon
+Lesser Demon
+Red Flying Demon (Drill)
+Makai Worm
+Paralysis Demon
+Greater Demon of Hard Flame
+Demon Mage of Hard Flame
+Demon Mage of Hard Flame
+Double Drill Demon
+Double Drill Demon
+Naga
+Oscar CC
+Jake CC
+Majin Vepar (lv.5-10)
+Majin Vepar Form 2 (lv.5-10)
+Miguel CC
+Makai Ant Queen
+Lesser Orc
+Lesser Orc (Berserk)
+Ghost Rogue
+Ghost Archer
+Ghost Valkyrie
+Ghost Mage
+Ghost Imperial Knight
+Ghost Assassin
+Ghost Assassin (Crossbow)
+Orc Hero
+Orc Hero (Berserk)
+Lesser Orc Archer
+Lesser Orc Archer (Berserk)
+Black Merman
+Black Merman Lancer
+Green Gillman
+Sereina
+Yellow Naga
+Meiling CC
+Meiling CC (Fast)
+Majin Vepar (Black)
+Majin Vepar Form 2 (Black)
+Jiangshi (Blue)
+Jiangshi (Purple)
+High Orc Rider
+High Orc Rider (Berserk)
+Shijie-xian
+Shijie-xian (Melee)
+Jiangshi (Black)
+Majin Bifrons (lv.1-4)
+Majin Bifrons
+Majin Bifrons Form 2
+Majin Bifrons Form 2
+Majin Bifrons (Black)
+Majin Bifrons (Black) Form 2
+Majin Bifrons (Black) Form 2
+Gaga
+Aida CC
+Majin Belzebuth
+Small Blue Treant
+Large Blue Treant
+Heavenly King of Swift Thunder
+Greater Lich Swordsman
+Dominion (Sealed)
+Dominion
+Earth Elemental
+Earth Elemental
+Goliah CC
+Pink Cyclops
+Yellow Cyclops
+Rita (Awakened)
+Waltz
+Nurarihyon (Sword)
+Nurarihyon
+Imelia (Awakened)
+Shuten Douji (lv.1-4)
+Heavenly King of Heavy Water
+Kayou AW
+Inari AW
+Ignis CC
+Soma
+Elaine
+Ricardo
+Majin Belzebuth
+Majin Belzebuth Form 2
+
+Angel Knight (White)
+Angel Knight (White)
+Angel Statue
+Angel Statue
+Shiropro Soldier
+Shiropro Advanced Soldier
+Shiropro Battering Ram
+Shiropro Heavy Soldier
+Shiropro Heavy Artillery
+/?
+/?
+Makai Ant (Hanging Down)
+Angel Knight (Red)
+Angel Knight (Red)
+Angel Knight (Black)
+Angel Knight (Black)
+Majin Agares lv.1-4
+Majin Agares lv.5-10
+Majin Agares Form 2
+Majin Agares (Black)
+Majin Agares Form 2 (Black)
+
+
+
+
+
+Estelle AW
+Goblin Tank (Queen)
+Goblin Tank (Queen)
+
+Spirit Oni (Black)
+White Archdemon
+
+Stone Golem
+Black Flying Demon
+Imp
+Dorothea
+Shino
+Green Kappa
+Red Kappa
+Weakened Shuten Douji (Headless)
+Shuten Douji (Headless)
+Shuten Douji (Headless) Form 2
+Red Minotaur
+Fast Jiangshi (Blue)
+Fast Jiangshi (Purple)
+Fast Jiangshi (Black)
+Kibashuu (Hammer)
+Goblin Catapult
+
+Erica
+
+Bifrons (Spirit)
+Lucia CC
+Lucia CC
+
+
+Lapis
+Succubus
+Keraunos
+Imperial Knight
+White Emperor
+Maou Garius
+Karma AW
+Goblin King (Cursed Weapon)
+Orc Commander (Cursed Weapon)
+
+Merman Javelineer (Cursed Weapon)
+
+
+
+
+Christmas Treant
+Seven
+Archdemon Swordsman (Cursed Weapon)
+Archdemon Swordsman (Cursed Weapon)
+Majin Phenex
+Mimic (Inactive)
+Mimic
+
+Olivier
+Elmira AW
+Female Oni (Not-Itsuki)
+Watermelon
+Anya AW
+Elmira AW
+Sherry AW (Charging)
+Sherry SAW
+Aoba
+Konoha
+Red Warrior Tengu
+Kibashuu (Shuten Douji)
+Kibashuu
+Shuten Douji (Black)
+Shuten Douji Form 2 (Black)
+Doula CC
+Aloof Beast Tamer
+Doula CC
+Doula CC
+Doula CC
+Anatolia CC
+Anatolia CC
+Sieglinde (Non-SAW)
+Sieglinde AW
+Rosel
+Heath
+Green Sniper (Melee)
+Green Sniper
+Green Assassin (Crossbow)
+Six
+Black Sniper (Melee)
+Black Sniper
+Kyuubi AW
+Leora AW
+Leona AW
+Cloris CC
+
+
+Shiropro Ninja
+
+
+Angel Mage Knight (White)
+Angel Mage Knight (White)
+Hakunokami (Swimming)
+Thunder Claw Jiangshi
+Dark Elemental
+
+
+Makai Boar
+
+Mireille
+Frederica CC
+Cait Sith
+Makai Boar (Fast)
+Blue Spirit
+Air Elemental
+Ester AW
+Ester AW (Walking)
+Shino
+Kasumi
+Kasumi
+Shino
+
+
+Koyomi
+Majin Phenex
+Majin Phenex Form 2
+Yao Tianjun
+Bestla CC
+Alice AW
+Ur AW
+Momo AW
+Blue Cultist
+Blue Cultist (Bifrons)
+Blue Cultist
+Blue Cultist (Belzebuth)
+Desert Bowrider
+Desert Gunrider
+Blue Ifrit
+Blue Salamander
+Majin Phenex (lv.1-4)
+Majin Kimaris (lv.1-4)
+
+Desert Magerider
+Velty
+Majin Phenex (Black)
+Majin Phenex (Black) Form 2
+Majin Kimaris (Spirit)
+Wererat
+Hansel
+Keraunos' Servant
+Riele (Melee)
+Riele (Ranged)
+Golden Mimic (Inactive)
+Golden Mimic
+Gigas
+Ramii
+Black Chimera (Flying Entrance)
+Gigas (Rock)
+Gigas (Rock)
+Blue Gazer
+Blue Gazer (Fast)
+Flying Greater Demon
+Armored Gargoyle
+Griffin Rider (Walking)
+Griffin Rider (Flying)
+Melvina Enemy
+Griffin Rider Archer (Flying)
+Towa AW
+Orichalcum Golem
+Orichalcum Golem
+Fuuko
+Ichimokuren/Dong Tianjun
+
+
+Tial
+
+
+
+
+
+
+
+Goblin Flying Puppet (Black)
+Goblin Flying Puppet (Black)
+Goblin Flying Puppet (Blue)
+Goblin Flying Puppet (Blue)
+Goblin Flying Puppet (Red)
+Goblin Flying Puppet (Red)
+Goblin Flying Puppet (Green)
+Goblin Flying Puppet (Green)
+Ghost Pirate
+Ghost Captain
+Anna (Sky Racer)
+Paula (Swimsuit)
+Phyllis (Yukata)
+Goblin Flying Puppet (Queen)
+Damaged Goblin Flying Puppet (Queen)
+Paula (Swimsuit)
+Repairing Goblin Flying Puppet (Queen)
+Marnie
+Majin Kimaris
+Majin Kimaris Form 2
+Kimaris' Servant
+Water Elemental
+Miyabi CC
+Phyllis
+Monica SAW
+Cenote
+Cenote AW
+Sayo
+Water Dragon (Swimming)
+Water Dragon
+Heavy Shielder
+Magic Armored Spearrider
+Sayo (Goblin)
+Sayo (Red Goblin)
+Sayo (Red Demon)
+Sayo (Paralysis Demon)
+Sayo (Black Archdemon)
+Koharu AW
+Majin Kimaris (Black)
+Majin Kimaris Form 2 (Black)
+Heavy Lancer
+Ibuki AW
+Decius
+Turquoise-Scaled Mermaid
+Purple-Scaled Mermaid
+Divine Beast Sphinx (Transition)
+Divine Beast Sphinx
+Makai Referee
+Majin Barbatos
+Majin Barbatos
+Majin Barbatos Form 2
+Niel CC
+Rakshasa
+Mephisto
+Barous
+Red Makai Ant (Hanging Down)
+Black Makai Ant (Hanging Down)
+Hakunokami AW
+Sabein CC
+Shadia
+Anatolia AW
+Anatolia AW
+
+Zombie Wolf
+Calliope (Dress) CC
+Zombie Chimera (Ranged)
+Zombie Chimera (Melee)
+Silvia AW
+Sephire
+
+Griffin
+Goblin Zombie Bomber
+
+Imperial Swordsman
+
+
+
+Orc Vampire
+Orc Vampire (<50% HP)
+Zombie Minotaur
+Zombie Werewolf
+Majin Barbatos (Black)
+Majin Barbatos (Black) Form 2
+Clara CC (Flying)
+Angeline AW
+Vampire Duke
+True Vampire Duke
+Centaur Archer
+Zombie Succubus
+Beastman Mummy
+Saval
+Goblin Queen (1st Daughter)
+Goblin Queen (2nd Daughter)
+Goblin Queen (3rd Daughter)
+Bastet
+
+Ghost Black Goblin Hero
+
+
+
+Ghost Ogre
+Ghost Red Wolf
+Ghost Wolf
+
+Onibi
+Ghost Ryujin Soldier
+Ghost Ryujin Spearman
+
+
+Cypria CC
+Bashira
+Goblin Flying Puppet (Elite)
+
+Pumpkin King (Ghost)
+Pumpkin Knight (Ghost)
+Goblin Flying Puppet (Elite)
+Dark Guild Sentry
+Dark Guild Sentry
+Belzebuth's Servant (Maggot)
+Belzebuth's Servant (Maggot) Morphing
+Makai Ant Soldier
+Black Makai Ant Soldier
+Acid Slime (Green)
+Acid Slime (Blue)
+Acid Slime (Black)
+Hermit (Blue)
+Hermit (Purple)
+Hermit (Black)
+Nadia
+Phonia CC
+Divine Beast Sphinx (Inactive)
+True Divine Beast Sphinx
+True Divine Beast Sphinx Form 2
+Kayou (Awakened)
+Inari (Awakened)
+Daki
+Bo Tianjun
+Flying Hermit (Blue)
+Flying Hermit (Purple)
+Flying Hermit (Black)
+Huang Tianjun
+Girtablilu
+Keraunos
+Keraunos (Spirit)
+Maou Garius
+Maou Garius (After 2 Deaths)
+Keraunos (Being torn out of body by Aigis and Adamas)
+Psyche CC
+Psyche (Black)
+Angel Mage Statue
+
+Shiropro Musketeer
+Shiropro Mounted Soldier
+War Elephant
+Golden Scorpion
+Imperial Cannon Armor
+Imperial Cannon Armor (Melee)
+Friede
+Friede (Melee)
+
+Shiropro Mounted Soldier
+Red Demon (Stealth)
+Black Archdemon (Stealth)
+White Archdemon (Stealth)
+Orthros (Stealth)
+Cerberus (Stealth)
+Imp (Stealth)
+
+
+
+
+
+
+Beradt
+Goblin Snow Catapult
+Succubus (Stealth)
+Demon Mage (Stealth)
+Majin Glasya-Labolas (lv.1-4)
+Majin Glasya-Labolas
+Majin Glasya-Labolas Form 2
+Kurama
+Sarah
+Ashera (Awakened)
+Red Flying Demon (Cannon)
+Makai Flower (Dormant)
+Makai Flower (Blooming 1)
+Makai Flower (Blooming 2)
+Makai Flower (Blooming 3)
+Makai Flower (Bloomed)
+Lan-Fa
+Lan-Fa
+Lei-Mei AW
+Jin-Guang Sheng-Pu
+Zun Tianjun
+Majin Glasya-Labolas (Black)
+Majin Glasya-Labolas Form 2 (Black)
+Unarmed Greater Demon (Stealth)
+Archdemon Swordsman (Stealth)
+Unarmed Greater Demon
+Hanny
+Hanny King
+Black Hanny
+Red Hanny
+Zun Tianjun
+Rino
+Rindou
+Greater Shadow
+Shuten Douji (Transforming)
+Chocolate Skeleton
+Linaria CC
+Duo SAW
+Ingrid AW
+Magma Golem
+Kuroko (Ranged)
+Kuroko (Melee)
+Red Belzebuth's Servant (Maggot)
+Red Belzebuth's Servant (Maggot) Morphing
+Red Belzebuth's Servant
+Majin Belzebuth Form 3
+Greater Demon (Ranged)
+Divine Beast Behemoth
+True Divine Beast Behemoth
+Cherub
+Angel Archer
+Taigong Wang
+Angel Archer
+Xun Tianjun
+Xun Tianjun
+Taigong Wang (Awakened)
+Saris CC
+Lehren
+Tenma Skill
+Tongtian Jiaozhu (lv.1-4)
+Tongtian Jiaozhu
+Tongtian Jiaozhu Form 2
+Terracotta Golem
+Filine AW
+Liza AW
+Marika
+Diana AW
+Dwight CC
+Aleese AW
+Viola AW
+Greater Yaohu
+Greater Yaohu
+Ding Tianjun
+Chao Tianjun
+Yuan Tianjun
+Greater Black Yaohu
+Greater Black Yaohu
+Mecha Goblin Queen
+Mecha Goblin Queen
+Wraith
+
+Tongtian Jiaozhu (Black)
+Tongtian Jiaozhu (Black) Form 2
+Black Cannon Terracotta Golem
+Black Cannon Terracotta Golem
+Wraith (Fading in)
+Hyuna
+Skeleton Cavalier
+Living Sword
+Jin-Guang Sheng-Pu (Awakened)
+Divine Beast Hecatoncheir (Blue)
+Divine Beast Hecatoncheir (Blue)
+Divine Beast Hecatoncheir (Blue) Form 2
+Divine Beast Hecatoncheir (Blue) Form 2
+Divine Beast Hecatoncheir (Red)
+Divine Beast Hecatoncheir (Red)
+Divine Beast Hecatoncheir (Red) Form 2
+Divine Beast Hecatoncheir (Red) Form 2
+
+Evil Bird
+Evil Bird
+Frost Giant
+Divine Beast Hecatoncheir (Black)
+Divine Beast Hecatoncheir (Black)
+Divine Beast Hecatoncheir (Black) Form 2
+Divine Beast Hecatoncheir (Black) Form 2
+Unicorn
+Dark Elf Shielder
+Greater Demon [2]
+Fire Giant
+Dark Guild Assassin
+Carrie (Swimsuit) CC
+Carrie (Swimsuit) CC
+Khuri (Swimsuit)
+Sonken Bundai
+Sonken Bundai (Fast)
+Sonken Chuubo
+Dark Guild Elite (Shotgun)
+Dark Guild Elite (Crossbow)
+Majin Gusion (lv.1-4)
+Majin Gusion
+Majin Gusion Form 2
+Gusion's Servant
+Gusion's Servant Form 2
+Red Peony
+Remii AW
+Kuuko AW
+
+
+Golden Ape
+Majin Gusion (Black)
+Majin Gusion (Black) Form 2
+Red Peony AW
+Myconid
+Venomous Snake
+Ice Elemental
+Mireille
+Kayou AW
+Sarah AW
+Anya AW
+Soldier
+Silvia AW
+Vivian CC
+Mutant Sahagin
+Mutant Sahagin (Swimming)
+Mutant Gillman
+Mutant Gillman (Swimming)
+Mutant Goblin (Melee)
+Mutant Goblin (Ranged)
+Mutant Ogre
+Small Security Machine
+Large Security Machine
+Mine
+Mine
+Landmine
+Goblin Flying Puppet (Mecha Queen)
+Goblin Flying Puppet (Mecha Queen)
+Goblin Flying Saucer
+Teeny AW
+Noire
+Pumpkin (Ghost)
+Pumpkin King (Ghost)
+Pumpkin Knight (Ghost)
+Divine Beast Garuda
+Divine Beast Garuda (Transforming)
+True Divine Beast Garuda
+Candy CC
+Pumpkin Carriage
+Yuyu AW
+Pumpkin Carriage
+Diane
+Ban
+King
+Meliodas
+Quill
+Alraune
+Noble Griffin (Flying)
+Noble Griffin (Walking)
+Quill AW
+Quill AW
+Griffin Rider Archer (Walking)
+Goblin Mecha
+Goblin War Band
+Goblin Artillery
+Goblin Artillery
+Decius
+Maou Mecha Decius
+Maou Garius (Transforming)
+Maou Garius (Awakened)
+Ikai Summoner (Blue Wolf)
+Ikai Summoner (Red Dragon)
+Majin Astaroth (lv.1-4)
+Majin Astaroth
+Majin Astaroth Form 2
+Dulphia
+Aberration
+Aberration (Ranged)
+Basilisk
+Roper King
+Beholder
+Otherworldly Majin
+Otherworldly Majin
+Fleurety
+Cornelia (Christmas)
+Lei-Mei AW
+Yukihime
+Greater Worm
+Demon Spider
+Rozette (New Year's) AW
+Greater Roper
+Majin Astaroth (Black)
+Majin Astaroth (Black) Form 2
+Sludge Worm
+Karin
+Longji Gongzhu
+Xiao-Mei AW
+Fan Daoshi
+Longji Gongzhu
+Black Warrior Tengu
+Benibotan (Stealth)
+Benibotan
+Saki AW (Stealth)
+Saki AW
+Aoba (Stealth)
+Aoba
+Yellow Preta (Stealth)
+Yellow Preta
+Green Kappa (Stealth)
+Green Kappa
+Blue Oni (Youkai) (Stealth)
+Blue Oni (Youkai)
+Ao Bouzu (Stealth)
+Ao Bouzu
+Red Dragon Mage (Stealth) 
+Red Dragon Mage (Stealth)
+Green Dragon Mage (Stealth)
+Green Dragon Mage
+Red Oni (Youkai) (Stealth)
+Red Oni (Youkai)
+
+
+Leaf (Valentine's)
+White Goblin
+Ootakemaru
+True Ootakemaru
+Shoutouren
+First Goblin Princess (Idol)
+Second Goblin Princess (Idol)
+Third Goblin Princess (Idol)
+Mecha Goblin Queen (Idol)
+
+Thunder Elemental
+Red Makai Ant Queen
+Sophie (Valentine's) AW
+Marnie (Valentine's) CC
+Zilva
+Melabyss AW
+Divine Beast Einherjar
+Heroic Spirit (Twin Swords)
+Heroic Spirit (Spear)
+Heroic Spirit (Axe)
+Heroic Spirit (Staff)
+Heroic Spirit (Bow)
+Mammon
+Ghost Advanced Valkyrie
+Ghost Beastman Archer
+Gaoleon
+Gaoleon (Blocked)
+Heroic Spirit (Spear) Alt Pose
+Black Dragon
+Wangfei Ren
+Taoist
+Wangfei Ren
+Taoist
+Huang Tianjun
+Hermit (Blue)
+
+Flying Hermit (Blue)
+Flying Hermit (Purple)
+Skeleton
+Sword Skeleton
+Skeleton Lancer
+Living Armor
+Wolf
+Red Wolf
+Staff Jiangshi (Blue)
+Staff Jiangshi (Purple)
+Staff Jiangshi (Black)
+Wangfei Ren AW
+Guren
+Monique
+Navi
+Navi (Sword)
+Chickbat
+Bottle Slime
+Pellaby
+Mischa (School) CC
+Mischa (School) CC
+Chloe (School) AW
+Chloe (School) CC
+Estrie
+Zombie Cyclops
+Vampire Behemoth
+Flying Vampire Behemoth
+Ema AW
+Shu-Xian
+Risley
+Quiz Soldier (Right Answer)
+Quiz Soldier (Right Answer)
+Quiz Soldier (Wrong Answer)
+Quiz Soldier (Wrong Answer)
+Aerial Iron Golem
+Trap
+Trap
+
+Risley (Hat Trick)
+Caterpillar (Regen)
+Caterpillar (No regen)
+Killer Mantis
+Flying Killer Mantis
+Anri AW
+Werebear
+Werebear
+Spider Queen
+Cactus
+Mushi
+Faust
+Majin Vepar (Spirit)
+Majin Vepar Form 2 (Spirit)
+Fluffy CC
+Five (Stealth)
+Five
+Giant Mushi
+Mushiko Enemy
+Lupin
+Lupin
+Goethe
+Deus Ex Machina
+Deus Ex Machina Form 2
+Red Guardian Sentry
+Blue Guardian Sentry
+Orc Shielder
+Orc Shielder
+High Orc Shielder
+High Orc Shielder
+Deus Ex Machina
+Flying Droid
+Medium Security Machine
+Blue Droid
+Red Small Security Machine
+Black Small Security Machine
+Red Droid
+Black Droid
+Deus Ex Machina (Black)
+Deus Ex Machina (Black) Form 2
+Gold Flying Droid
+Blue Medium Security Machine
+Agares Hawk
+Maya (Swimsuit)
+Ghost Bandit
+Rita (Swimsuit)
+Silvia (Swimsuit)
+Sousou
+Ryuubi
+Bachou
+Agares Hawk
+Goblin Mecha (Cannon)
+Majin Agares (Black) lv16
+Majin Agares Form 2 (Black) lv16
+Mithril Golem
+Mithril Golem
+Greater Worm
+Unarmed Greater Demon
+Armored Crab
+Maneater
+Merman Shark Rider
+Black Merman Shark Rider
+Merman Shark Rider
+Black Merman Shark Rider
+Kibashuu (Hammer) (Stealth)
+Kibashuu (Stealth)
+
+Ninja (Stealth)
+Ninja Master (Stealth)
+
+Mutant Archdemon Swordsman
+Mutant Archdemon Swordsman
+Ultra Mutated Archdemon Swordsman
+Ultra Mutated Archdemon Swordsman
+Mutant White Archdemon
+Mutant Red Flying Demon
+Xenia AW
+Eldora
+Kralhu
+Sagiri
+Sagiri (Stealth)
+Tanuki
+Tanuki (Transforming)
+Erlang Shen
+Ilios
+Mao (Yukata) CC
+Daitouren
+Ramii
+Divine Beast Genbu
+Divine Beast Seiryuu
+Divine Beast Byakko
+Divine Beast Suzaku
+True Divine Beast Suzaku
+Mao (Yukata)
+Anatolia CC
+Ilios (No Flag)
+Setsuna
+Atnates (Platinum)
+Red Dragon
+Vampire Sphinx
+
+Renarde CC
+Renarde (Halloween) CC
+Lich Lord
+Lich Lord
+Tower Guardian (Knight)
+Tower Guardian (Knight)
+Tower Guardian (Mage)
+Giant Wererat
+Maou Mecha Decius
+Maou Mecha Decius Form 2
+Yuugen (Platinum)
+Atnates (Platinum)
+Maou Garius (Awakened Shadow)
+Mecha Goblin Queen
+Katie
+Solais (Platinum)
+
+Greater Furfur's Servant
+Hero's Illusion (Geomancer)
+Majin Furfur lv16
+Majin Furfur Form 2 lv16
+Maou Garius (Awakened)
+Maou Garius (Awakened) Form 2
+Maou Garius (Awakened) Form 3
+Maou Garius (Awakened) Form 3
+Phenex's Servant
+Shizuka AW
+Pupuru AW
+Kibahime AW
+Aleida CC
+Engineer
+Barricade
+
+Rocket Trooper
+Majin Phenex lv16
+Majin Phenex Form 2 lv16
+Harmonia
+Ethnea
+Grimm
+Queen of Thorns
+Complete Mecha Dragon Toy
+Mecha Dragon Toy
+Fire Worm
+Majin Amon (Black) lv16
+Majin Amon Form 2 (Black) lv16
+Mecha Dragon Toy
+Mecha Golem Toy
+Ertel (Christmas) CC
+
+Suzune
+Homura
+Tongtian Jiaozhu (Black) lv16
+Tongtian Jiaozhu Form 2 (Black) lv16
+Tongtian Jiaozhu (Clone)
+Tongtian Jiaozhu Form 2 (Clone)
+Shu-Xian AW
+Char AW
+
+Altair CC
+Fuuka CC
+Eldora (New Year's)
+Sabein
+Eldora (New Year's)
+Shuten Douji (Black) lv16
+Shuten Douji Form 2 (Black) lv16
+Shuten Douji Form 3 (Black) lv16
+Thunder Oni
+Deluga
+Deluga Form 2
+Chiffon MacDougall
+Ghost Yaohu
+Ghost Yaohu
+Greater Ghost Yaohu
+Greater Ghost Yaohu
+
+
+Chocolate Myconid
+Chocolate Treant
+Chocolate Imp
+
+Chocolate Demon
+Chocolate Drill Demon
+Chocolate Drill Demon
+Chocolate Imp
+Chocolate Demon
+Chocolate Myconid
+Chocolate Treant
+Eithne
+Nidhoggr (Entrance)
+Nidhoggr (Hover)
+Nidhoggr (Firebreath)
+
+
+Wraith King
+Wraith King (Melee)
+Majin Barbatos (Black) lv16
+Majin Barbatos (Black) lv16
+Villager (Pitchfork)
+Villager (Hoe)
+Horned Scarab
+King Scarab
+Hot Springs Greater Demon (Swimming)
+Hot Springs Greater Demon (Walking)
+Anna
+Anna (Uniform)
+Prince (Female)
+Mortimer (Female)
+Leeanne CC
+Totono AW
+Totono AW (Skill)
+Mercenary
+Valerie CC
+Alicia AW
+Bernice AW
+Greataxe Executioner
+Towa (School) AW
+
+Diera
+Wendy AW
+Cornelia AW
+
+Majin Kimaris (Black) lv16
+Majin Kimaris Form 2 (Black) lv16
+Heavy Archer
+Heavy Archer
+Golden Armored Cyclops
+Isla
+Illusion of Adamas
+Goblin Pug Rider
+
+Abyssal Shadow
+Ethnea AW
+
+Tower Guardian (Heavy)
+Red Orb Device
+Blue Orb Device
+
+Evolved Makai Ant Queen
+Evolved Makai Ant Queen
+Makai Ant Archer
+Kraken (Entering)
+Kraken (Swimming)
+Kraken (Exiting)
+Kraken (Walking)
+Kraken's Tentacle (Entering)
+Kraken's Tentacle
+Kraken's Tentacle (Exiting)
+White Holy Knight
+Finan
+
+
+Stealthed Lesser Vampire
+Stealthed Greater Vampire
+Stealthed Vampire Wolf
+
+Stealthed Black Sniper (Melee)
+Stealthed Black Sniper
+Shadow Wolf
+Suiren (Bride)
+Suiren (Bride)
+Shadow Wolf
+Stealthed Blood Magic Knight
+Blood Magic Knight
+Stealthed Xun Tianjun
+Stealthed Staff Jiangshi (Blue)
+Stealthed Vampire Succubus
+Diera (Bride)
+Eterna (Bride)
+Stealthed Vampire Duke
+Stealthed True Vampire Duke
+Flying Mushi
+Flying Mushi (Fast)
+
+Grimoire
+Ganimard
+Mushiko
+Lovecraft AW
+Vampire Duke
+Grimm
+Steam Tank
+Dark Guild's Monstrous Beast (Caged)
+Dark Guild's Monstrous Beast
+Mushiko
+
+
+Harpy
+Infant Saratan
+Infant Saratan
+Saratan (Swimming)
+Leora (Swimsuit) CC
+Kyuubi (Swimsuit) AW
+Tenko Clone
+Eleonora (Swimsuit) AW
+Sieglinde (Swimsuit) AW
+Lieselotte (Swimsuit)
+Frey (Swimsuit) AW Swimming
+Frey (Swimsuit) AW 
+Leona (Swimsuit) AW
+Lieselotte (Swimsuit) SAW
+Saratan (Hidden)
+Saratan (Swimming)
+Saratan
+Saratan
+Tenko Clone (Spawn animation)
+Rafflesia
+Rafflesia's Vine
+White-Winged Birdman
+White-Winged Birdman
+Thunderbird
+
+Rhyno
+Rhyno
+Mephisto (Swimsuit)
+Perfect Beradt
+Perfect Beradt
+White Holy Archer
+Diana (Swimsuit) AW
+
+
+White Holy Knight
+Beradt (Transforming)
+Scar (Swimming)
+Scar
+Sword Gillman
+Natalie (Swimsuit) CC
+Meer (Swimsuit) CC
+Ghigael
+Sharkman
+Shark
+Underwater Green Sahagin
+Underwater Sahagin
+Underwater Green Gillman
+Underwater Gillman
+Underwater Merman (Saw)
+Black Underwater Merman (Saw)
+Dracorex
+Dracorex
+Dracorex
+Dracorex
+Dracorex
+Dracorex
+Dracoraptor
+Dracoraptor
+Regina (Yukata) CC
+Regina (Yukata) CC
+True Grim Reaper (Spawn Animation)
+True Grim Reaper
+True Grim Reaper (Death Animation)
+Grim Reaper (Spawn Animation)
+Grim Reaper
+Grim Reaper (Death Animation)
+Giant Skeleton Swordsman
+Regina (Yukata) Fireworks
+Celestial Soldier
+Celestial Soldier
+Junior Celestial Soldier
+Junior Celestial Soldier
+Golden Celestial Knight
+Golden Celestial Knight
+Silver Celestial Knight
+Silver Celestial Knight
+Celestial Berserker
+Celestial Berserker
+Majin Vepar (Black) lv16
+Majin Vepar Form 2 (Black) lv16
+Siren (Entering)
+Siren
+Siren (Exiting)
+White Crusader
+Resurrected White Crusader
+Domalde
+Manta Ray
+Jellyfish
+Merman Mage
+Blue Shark
+Mary (No Staff)
+Mary
+Belinda CC
+Blue Horned Oni
+Red Masked Oni
+Kappa (Swimming)
+Kappa
+Karakasa
+Karakasa
+Tengu
+Ippondatara
+Tomoe AW
+Tomoe AW (Meteor Spear)
+Edo (Gigantification 0)
+Edo (Gigantification 1)
+Edo (Gigantification 2)
+Edo (Gigantification 3)
+Edo (Gigantification 4)
+Edo (Gigantification 5)
+Himeji (Gigantification 0)
+Himeji (Gigantification 1)
+Himeji (Gigantification 2)
+Himeji (Gigantification 3)
+Himeji (Gigantification 4)
+Himeji (Gigantification 5)
+Schönbrunn Palace (Gigantification 0)
+Schönbrunn Palace (Gigantification 1)
+Schönbrunn Palace (Gigantification 2)
+Schönbrunn Palace (Gigantification 3)
+Schönbrunn Palace (Gigantification 4)
+Schönbrunn Palace (Gigantification 5)
+Ryuukyuu Gusuku (Gigantification 0)
+Ryuukyuu Gusuku (Gigantification 1)
+Ryuukyuu Gusuku (Gigantification 2)
+Ryuukyuu Gusuku (Gigantification 3)
+Ryuukyuu Gusuku (Gigantification 4)
+Ryuukyuu Gusuku (Gigantification 5)
+Neuschwanstein (Gigantification 0)
+Neuschwanstein (Gigantification 1)
+Neuschwanstein (Gigantification 2)
+Neuschwanstein (Gigantification 3)
+Neuschwanstein (Gigantification 4)
+Neuschwanstein (Gigantification 5)
+Ashikaga-shi Yakata (Gigantification 0)
+Ashikaga-shi Yakata (Gigantification 1)
+Ashikaga-shi Yakata (Gigantification 2)
+Ashikaga-shi Yakata (Gigantification 4)
+Ashikaga-shi Yakata (Gigantification 3)
+Ashikaga-shi Yakata (Gigantification 5)
+Imagawa Yoshimoto
+Shiropro Bowgunner
+Shiropro Human Footsoldier
+Shiropro Human Musketeer
+Shiropro Elite Soldier
+Troll King
+Enraged Troll King
+Tomoe AW (Leaping)
+Tomoe AW (Entrance/Landing)
+Tomoe AW (Still)
+Tomoe AW (Still)
+Livre
+Kijin Ootakemaru (Invulnerable)
+Kijin Ootakemaru (Vulnerable)
+Kijin Ootakemaru Form 2
+Kijin Ootakemaru (Black) (Invulnerable)
+Kijin Ootakemaru (Black) (Vulnerable)
+Kijin Ootakemaru (Black) Form 2
+Holy Sword Shoutouren
+Holy Sword Daitouren
+Holy Sword Kenmyouren
+Shoutouren's Casket (Closed)
+Daitouren's Casket (Closed)
+Kenmyouren's Casket (Closed)
+Holy Sword's Casket (Open)
+Black Ushi-Oni
+Pumpkin Deus
+Female Birdman Archer
+Umbre (Halloween) AW
+Memento (Halloween)
+Livre (Halloween)
+Hawk-Winged Birdman Soldier
+Hawk-Winged Birdman Soldier (Charging)
+Falcon-Winged Birdman Archer
+
+Kijin Ootakemaru (Vulnerable) lv1-5
+Arael
+Sacred Bird
+Black Pallios
+Black Pallios
+Astrolabe
+Ambrose (Platinum)
+Ambrose (Platinum)
+Bloom Petal
+Female Protector Statue (Inactive)
+Female Protector Statue
+Lamia
+Gorgon
+Tram
+
+Prince (Einherjar)
+Prince (Keraunos)
+Prince (Giant)
+Prince (Hero King)
+Katie AW
+Nanaly AW
+Reflet AW
+Aix AW
+Heios AW
+Nicole AW
+Light Elemental
+Tsukiko
