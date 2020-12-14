@@ -9,7 +9,7 @@
       "cwd": "${workspaceFolder}",
       "path": "${workspaceFolder}/Scripts/?.lua",
       "cpath": "${workspaceFolder}/?.dll",
-      "arg": ["904", "page"],
+      "arg": ["1075", "full"],
       "consoleCoding": "utf8"
     }
   ]

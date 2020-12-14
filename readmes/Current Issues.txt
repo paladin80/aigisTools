@@ -9,8 +9,8 @@ unit
 * [FIXED] 150 aff bonus not implemented with current formatting, also has 1.2x scaling when it shouldn't
 * [FIXED] Plat heroes have incorrect max level and scaling
 * [FIXED] Silvers are getting too many lines of stats, some error with the lv55 thing?
-* Missing some new affection types like -cost
-* Can't make pages for Akira's Fire/Sun tokens
+* [FIXED] Missing some new affection types like -cost
+* [FIXED] Can't make pages for Akira's Fire/Sun tokens
 * Doesn't seem to output attack speed anymore for some units and classes (Arge, Ambrose)
 
 * Needs a way to translate affiliations

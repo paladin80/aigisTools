@@ -1288,7 +1288,7 @@ local function imagedump(id, out, working, mode)
                   unit_scale = cards[id].DotScale
                   scale_lib.do_scale(result_path, unit_scale, scale_directory)
                 end
-                if config['pngout'] then os.execute('pngout' .. ' ' .. scale_directory .. pic:sub(1,-5) .. '_scaled.png' .. png_suffix_sprite) end
+                if config['pngout_gifs'] then os.execute('pngout' .. ' ' .. scale_directory .. pic:sub(1,-5) .. '_scaled.png' .. png_suffix_sprite) end
               end
             end
           end
@@ -1343,7 +1343,7 @@ local function imagedump(id, out, working, mode)
                   end
 		          local outputdir
 		          if mode['dump'] then outputdir = config['dump directory'] else outputdir = out..'\\images\\' end
-                  args = args .. outputdir .. gifname .. '  >nul 2>&1'
+                  args = args .. outputdir .. gifname 
                   os.execute(args)
 				  --print(args)
 				  if config['File Printouts'] then print(unit_name..suffixer(dot,anim:sub(1,2)):gsub('_',' ')..' Sprite.gif generated') end

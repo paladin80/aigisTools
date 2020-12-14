@@ -20,16 +20,20 @@ end
 local function parse(id)
   local out = ""
   local missile = missiles[id + 1]
-  out = out .. "Missile ID: " .. id .. " (" .. (missile.Enemy ~= 0 and "enemy" or "ally") .. ")\n"
-  out = out .. "Speed: " .. missile.Speed .. "\n"
-  out = out .. "Offset: " .. missile.XOffset .. ", " .. missile.YOffset .. "; MaxDim: " .. missile.MaxWidth .. ", " .. missile.MaxHeight .. "\n"
-  if missile.DamageArea ~= 0 then
-    out = out .. "Splash: " .. math.floor(missile.DamageArea * 4 / 3 + .5) .. " (" .. missile.DamageArea .. " * 4/3)\n"
+  if missile then
+    out = out .. "Missile ID: " .. id .. " (" .. (missile.Enemy ~= 0 and "enemy" or "ally") .. ")\n"
+    out = out .. "Speed: " .. missile.Speed .. "\n"
+    out = out .. "Offset: " .. missile.XOffset .. ", " .. missile.YOffset .. "; MaxDim: " .. missile.MaxWidth .. ", " .. missile.MaxHeight .. "\n"
+    if missile.DamageArea ~= 0 then
+      out = out .. "Splash: " .. math.floor(missile.DamageArea * 4 / 3 + .5) .. " (" .. missile.DamageArea .. " * 4/3)\n"
+    end
+    if missile.SlowTime ~= 0 or missile.SlowRate ~= 0 then
+      out = out .. "Slow: " .. missile.SlowRate .. "% for " .. missile.SlowTime .. " frames\n"
+    end
+    out = out .. "Deflect: " .. (deflectable[id] and "yes" or "no") .. "\n"
+  else
+    out = out .. "No missile defined\n"
   end
-  if missile.SlowTime ~= 0 or missile.SlowRate ~= 0 then
-    out = out .. "Slow: " .. missile.SlowRate .. "% for " .. missile.SlowTime .. " frames\n"
-  end
-  out = out .. "Deflect: " .. (deflectable[id] and "yes" or "no") .. "\n"
   return out
 end
 
