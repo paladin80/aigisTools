@@ -14,4 +14,6 @@ unit
 * [FIXED] Can't make pages for Akira's Fire/Sun tokens
 * [FIXED] Doesn't seem to output attack speed anymore for some units and classes (Arge, Ambrose)
 * [FIXED] Needs a way to translate affiliations
-* [CantReproduce] Summoner attack gifs are messed up without some manual input
+* [PARTIALLY] Summoner attack gifs are messed up without some manual input
+Summoner sprites realy difficult to automate. Ideally you should blend summon and summoner sprites together in an image editor before creating an animation.
+Currently it tries to generate gif of only the summoner animation, but it is still not correct for some summoners.

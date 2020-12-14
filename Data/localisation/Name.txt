@@ -1109,6 +1109,9 @@ Keitridge
 Pallios
 Tram (Platinum)
 Prince (Divine Spear)
-
+Tram (NPC)
 Chibi Tifa
 Chibi Junon
+Tifa (Christmas)
+Heios (Christmas)
+Buleria (Christmas)

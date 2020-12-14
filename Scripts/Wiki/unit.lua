@@ -1171,7 +1171,7 @@ local function imagedump(id, out, working, mode)
               end
             end
           end
-		end
+		  end
       end
     end
 	if not mode['gif'] and not mode["image"] and not mode['full'] then
@@ -1228,89 +1228,91 @@ local function imagedump(id, out, working, mode)
   end
   
   if mode["full"] or mode["image"] or mode["gif"] then
-    if config['iSet Startup Printouts'] then print('Starting '..unit_name..' gifs') end   
+    if config['iSet Startup Printouts'] then print('Starting to scale '..unit_name..' sprites') end   
     local cmd = assert(io.popen('cmd /c dir '..out..' /b', "r"))
     local h = cmd:read('*a')
     cmd:close()
+    if true then
     for dot in h:gmatch('dot%d') do
       if mode[image_set_cc[tonumber(dot:match('%d+'))]] then
-          local cmd = io.popen('cmd /C dir '..out..'\\'..dot..' /B', "r")
-          animlist = cmd:read('*a')
-            --print(animlist)
+        local cmd = io.popen('cmd /C dir '..out..'\\'..dot..' /B', "r")
+        local animlist = cmd:read('*a')
+        cmd:close()
+        for anim in animlist:gmatch('%d+_[%a%d_]+.aod') do
+          local cmd = io.popen('cmd /C dir '..out..'\\'..dot..'\\'..anim..' /B', "r")
+          local imagelist = cmd:read('*a')
           cmd:close()
-          for anim in animlist:gmatch('%d+_[%a%d_]+.aod') do
-            local cmd = io.popen('cmd /C dir '..out..'\\'..dot..'\\'..anim..' /B', "r")
-            imagelist = cmd:read('*a')
-            cmd:close()
-            local action_folder = out..'\\'..dot..'\\'..anim.."\\"
-            if (anim:match('Stand') or anim:match('Damage')) and (mode["full"] or mode["image"] or mode["sprite"]) then
-			  local anim_suffix = ""
-			  if anim:match('Damage') then anim_suffix = "_Death" end
-              local sprite = imagelist:match('(alod_SP%d+_%d*.png)')
-              os.execute('cmd /c copy '..action_folder..sprite..' '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png >nul 2>&1")
-              scale_lib.do_scale(out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png", cards[id].DotScale)
-              os.execute('cmd /c del '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png >nul 2>&1")
-              os.execute('cmd /c rename '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite_scaled.png "
-                                                  ..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png >nul 2>&1")
-              if config['pngout'] then  os.execute('cmd /c pngout '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))].."_Sprite.png" .. png_suffix_sprite) end
-			  if config['File Printouts'] then print(unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix..'_Sprite.png generated') end
+          local action_folder = out..'\\'..dot..'\\'..anim.."\\"
+          if (anim:match('Stand') or anim:match('Damage')) and (mode["full"] or mode["image"] or mode["sprite"]) then
+            local anim_suffix = ""
+            if anim:match('Damage') then anim_suffix = "_Death" end
+            local sprite = imagelist:match('(alod_SP%d+_%d*.png)')
+            os.execute('cmd /c copy '..action_folder..sprite..' '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png >nul 2>&1")
+            scale_lib.do_scale(out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png", cards[id].DotScale)
+            os.execute('cmd /c del '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png >nul 2>&1")
+            os.execute('cmd /c rename '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite_scaled.png "
+                                                ..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix.."_Sprite.png >nul 2>&1")
+            if config['pngout'] then  os.execute('cmd /c pngout '..out..'\\images\\'..unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))].."_Sprite.png" .. png_suffix_sprite) end
+            if config['File Printouts'] then print(unit_name..art_suffix_B[tonumber(dot:match('dot(%d*)'))]..anim_suffix..'_Sprite.png generated') end
+          end
+          --Re-purposed illumini9's mass-resize and gif-make right about here.
+          if file.file_exists(action_folder .. "ALMT.txt") then
+            local dimensions = {left = 0, top = 0, right = 0, bottom = 0}
+            -- collating origins to adjust to appropriate size
+            for pic in imagelist:gmatch('(alod_SP%d+_%d+.png)') do
+              local pfile = io.popen('gm identify ' .. action_folder .. pic)
+              local widxhei = pfile:read('*a')
+              assert(pfile:close())
+              local wid, hei = widxhei:match("PNG (%d+)x(%d+)%+0%+0")
+              wid = tonumber(wid); hei = tonumber(hei)
+              local teh_file = assert(io.open(action_folder .. pic:sub(1,-4) .. "txt", 'rb'))
+              local file_content = teh_file:read('*a')
+              assert(teh_file:close())
+              local originx, originy = file_content:match("origin_x:(%d+).+origin_y:(%d+)")
+              --Cutoff for massive X/Y transforms which can cause massive slowdowns. 
+              if (config['GIF XY Cutoff'] and tonumber(originx)>config['GIF XY Cutoff']) or (config['GIF XY Cutoff'] and tonumber(originy)>config['GIF XY Cutoff']) then break end
+              originx = tonumber(originx); originy = tonumber(originy)
+              local right = wid - originx
+              local bottom = hei - originy
+              if dimensions["left"] < originx then dimensions["left"] = originx end
+              if dimensions["top"] < originy then dimensions["top"] = originy end
+              if dimensions["right"] < (wid - originx) then dimensions["right"] = (wid - originx) end
+              if dimensions["bottom"] < (hei - originy) then dimensions["bottom"] = (hei - originy) end
             end
-            --Re-purposed illumini9's mass-resize and gif-make right about here.
-            if file.file_exists(action_folder .. "ALMT.txt") then
-              local dimensions = {left = 0, top = 0, right = 0, bottom = 0}
-              -- collating origins to adjust to appropriate size
-              for pic in imagelist:gmatch('(alod_SP%d+_%d+.png)') do
-                local pfile = io.popen('gm identify ' .. action_folder .. pic)
-                local widxhei = pfile:read('*a')
-                assert(pfile:close())
-                local wid, hei = widxhei:match("PNG (%d+)x(%d+)%+0%+0")
-                wid = tonumber(wid); hei = tonumber(hei)
-                local teh_file = assert(io.open(action_folder .. pic:sub(1,-4) .. "txt", 'rb'))
+            local nudge_directory = action_folder .. 'nudged\\'
+            if not file.dir_exists(nudge_directory) then file.make_dir(nudge_directory) end
+            local scale_directory = action_folder .. 'scaled'
+            --if unit_scale then scale_directory = scale_directory .. '_' .. unit_scale end
+            scale_directory = scale_directory .. '\\'
+            if not file.dir_exists(scale_directory) then file.make_dir(scale_directory) end
+            os.execute('gm convert -size ' .. dimensions["left"] + dimensions["right"] ..
+              'x' .. dimensions["top"] + dimensions["bottom"] .. ' xc:none working\\background.miff')
+            for pic in imagelist:gmatch('alod_SP%d+_%d+.png') do
+              local file_path = action_folder .. pic
+              local result_path = nudge_directory .. pic
+              if force == "force" or not file.file_exists(scale_directory .. pic:sub(1,-5) .. '_scaled.png') then
+                local teh_file = assert(io.open(file_path:sub(1,-4) .. "txt", 'rb'))
                 local file_content = teh_file:read('*a')
                 assert(teh_file:close())
-                local originx, originy = file_content:match("origin_x:(%d+).+origin_y:(%d+)")
-				--Cutoff for massive X/Y transforms which can cause massive slowdowns. 
-				if (config['GIF XY Cutoff'] and tonumber(originx)>config['GIF XY Cutoff']) or (config['GIF XY Cutoff'] and tonumber(originy)>config['GIF XY Cutoff']) then break end
-                originx = tonumber(originx); originy = tonumber(originy)
-                local right = wid - originx
-                local bottom = hei - originy
-                if dimensions["left"] < originx then dimensions["left"] = originx end
-                if dimensions["top"] < originy then dimensions["top"] = originy end
-                if dimensions["right"] < (wid - originx) then dimensions["right"] = (wid - originx) end
-                if dimensions["bottom"] < (hei - originy) then dimensions["bottom"] = (hei - originy) end
+                local originx, originy = string.match(file_content,"origin_x:(%d+).+origin_y:(%d+)")
+                --Cutoff for massive X/Y transforms which can cause massive slowdowns. 
+                if (config['GIF XY Cutoff'] and tonumber(originx)>config['GIF XY Cutoff']) or (config['GIF XY Cutoff'] and tonumber(originy)>config['GIF XY Cutoff']) then break end
+                local geometry = '-geometry +' .. dimensions["left"] - tonumber(originx) .. '+' .. dimensions["top"] - tonumber(originy) .. ' '
+                assert(file.file_exists('working\\background.miff'))
+                os.execute('gm composite ' .. geometry .. file_path .. ' working\\background.miff ' .. result_path)
+                if config['pngout'] then os.execute('pngout' .. ' ' .. result_path .. png_suffix_sprite) end
+                unit_scale = cards[id].DotScale
+                scale_lib.do_scale(result_path, unit_scale, scale_directory)
               end
-              local nudge_directory = action_folder .. 'nudged\\'
-              if not file.dir_exists(nudge_directory) then file.make_dir(nudge_directory) end
-              local scale_directory = action_folder .. 'scaled'
-              --if unit_scale then scale_directory = scale_directory .. '_' .. unit_scale end
-              scale_directory = scale_directory .. '\\'
-              if not file.dir_exists(scale_directory) then file.make_dir(scale_directory) end
-              os.execute('gm convert -size ' .. dimensions["left"] + dimensions["right"] ..
-                'x' .. dimensions["top"] + dimensions["bottom"] .. ' xc:none working\\background.miff')
-              for pic in imagelist:gmatch('alod_SP%d+_%d+.png') do
-                local file_path = action_folder .. pic
-                local result_path = nudge_directory .. pic
-                if force == "force" or not file.file_exists(scale_directory .. pic:sub(1,-5) .. '_scaled.png') then
-                  local teh_file = assert(io.open(file_path:sub(1,-4) .. "txt", 'rb'))
-                  local file_content = teh_file:read('*a')
-                  assert(teh_file:close())
-                  local originx, originy = string.match(file_content,"origin_x:(%d+).+origin_y:(%d+)")
-				  --Cutoff for massive X/Y transforms which can cause massive slowdowns. 
-				  if (config['GIF XY Cutoff'] and tonumber(originx)>config['GIF XY Cutoff']) or (config['GIF XY Cutoff'] and tonumber(originy)>config['GIF XY Cutoff']) then break end
-                  local geometry = '-geometry +' .. dimensions["left"] - tonumber(originx) .. '+' .. dimensions["top"] - tonumber(originy) .. ' '
-                  assert(file.file_exists('working\\background.miff'))
-                  os.execute('gm composite ' .. geometry .. file_path .. ' working\\background.miff ' .. result_path)
-                  if config['pngout'] then os.execute('pngout' .. ' ' .. result_path .. png_suffix_sprite) end
-                  unit_scale = cards[id].DotScale
-                  scale_lib.do_scale(result_path, unit_scale, scale_directory)
-                end
-                if config['pngout_gifs'] then os.execute('pngout' .. ' ' .. scale_directory .. pic:sub(1,-5) .. '_scaled.png' .. png_suffix_sprite) end
-              end
+              if config['pngout_gifs'] then os.execute('pngout' .. ' ' .. scale_directory .. pic:sub(1,-5) .. '_scaled.png' .. png_suffix_sprite) end
             end
           end
         end
       end
+    end
+    end
 	
+    if config['iSet Startup Printouts'] then print('Create '..unit_name..' gifs') end   
     local cmd = assert(io.popen('cmd /c dir '..out..' /b', "r"))
     local h = cmd:read('*a')
     cmd:close()
@@ -1327,8 +1329,10 @@ local function imagedump(id, out, working, mode)
             local text = assert(h:read('*a'))
             assert(h:close())
             local steps = {}
-            for sec_mark in text:gmatch("%d @(...)%:") do
-              table.insert(steps, sec_mark)
+            for section in text:gmatch("entry: SP00([^%]]*)]") do
+              for sec_mark in section:gmatch("%d @(...)%:") do
+                table.insert(steps, sec_mark)
+              end
             end
             if steps[1] ~= "N/A" then
               for step, sec_mark in ipairs(steps) do
@@ -1343,12 +1347,10 @@ local function imagedump(id, out, working, mode)
               local gifname = unit_name..suffixer(dot,anim:sub(1,2))..'_Sprite.gif'
               local ext = '_scaled.png '
               local cmd = io.popen('cmd /C dir '..action_folder..edited_folder .. '\\ /B', "r")
-              steplist = cmd:read('*a')
+              local steplist = cmd:read('*a')
               cmd:close()
-              local _, count = string.gsub(steplist, ".png", "")
-		      --if #steps == count then print(anim) end
-			  --print(count)
-              if file.dir_exists(action_folder .. edited_folder .. '\\') and #steps == count then
+              local _, count = string.gsub(steplist, "alod_SP00_", "")
+              if file.dir_exists(action_folder .. edited_folder .. '\\') and #steps <= count then
                 if force == 'force' or not file.file_exists(action_folder .. gifname) then
                   local args = 'magick -dispose previous -loop 0 '
                   for step, secs in ipairs(steps) do
@@ -1361,9 +1363,10 @@ local function imagedump(id, out, working, mode)
 		          if mode['dump'] then outputdir = config['dump directory'] else outputdir = out..'\\images\\' end
                   args = args .. outputdir .. gifname 
                   os.execute(args)
-				  --print(args)
-				  if config['File Printouts'] then print(unit_name..suffixer(dot,anim:sub(1,2)):gsub('_',' ')..' Sprite.gif generated') end
+        				  if config['File Printouts'] then print(unit_name..suffixer(dot,anim:sub(1,2)):gsub('_',' ')..' Sprite.gif generated') end
                 end
+              else
+                print("metadata and sprites mismatch for " .. gifname)
               end
             end
           end
