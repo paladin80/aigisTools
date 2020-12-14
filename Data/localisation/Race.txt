@@ -7,46 +7,46 @@
 ドワーフ = Dwarf
 ヴァンパイア = Vampire
 デーモン = Demon
-ハーフデーモン = Half daemon?
+ハーフデーモン = Half Demon
 天使 = Angel
 妖怪 = Youkai
 仙人 = Hermit
 オーク = Orc
-ねんどろいど = Nendoroid?
-ゴブリン = Goblin?
-鳥人 = Chojin?
-魚人 = Murloc?
-神 = God?
+ねんどろいど = Nendoroid
+ゴブリン = Goblin
+鳥人 = Birdfolk
+魚人 = Merfolk
+神 = God
 聖霊 = Holy Spirit
-
-
-王国 = kingdom?
-白の帝国 = White empire?
-パルス王国 = Pulse Kingdom?
-遠国 = Far country?
-砂漠の国 = Desert country?
-〈七つの大罪〉 = Seven Deadly Sins?
-異郷の騎士団 = Knights of a foreign country?
+ 
+ 
+王国 = Kingdom
+白の帝国 = White Empire
+パルス王国 = Kingdom of Pars
+遠国 = Distant Land
+砂漠の国 = Desert Country
+〈七つの大罪〉 = Seven Deadly Sins
+異郷の騎士団 = Chivalric Order of the Foreign Land
 東の国 = Eastern Country
-
-
-アンデッド = Undead?
-機械 = Mechanical?
+ 
+ 
+アンデッド = Undead
+機械 = Machine
 魔術師 = Magicians
-弓兵 = Archers?
-
-
+弓兵 = Bowman
+ 
+ 
 プリンス = Prince
 姫 = Princess
-英傑 = Yingjie?
-
-
-お正月 = New Year
+英傑 = Hero
+ 
+ 
+お正月 = New Year's
 バレンタイン = Valentine's
-学園 = Academy?
-ジューンブライド = Bride
-サマー = Summer?
+学園 = School
+ジューンブライド = June Bride
+サマー = Summer
 ハロウィン = Halloween
 クリスマス = Christmas
 ちび = Chibi
-温泉 = Hot springs
+温泉 = Hot Springs
