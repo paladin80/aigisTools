@@ -90,15 +90,21 @@ local function translate(text)
   if translate_dictionary[text] then
     return translate_dictionary[text]
   else
-    local translated = tran.traslate(text)
+    local translated = tran.translate(text)
+    if translated == nil then
+      translated = text
+    else
+      translated = translated .. " (" .. text .. ")"
+    end
     translate_dictionary[text] = translated
     local h = io.open('Data\\localisation\\translate.txt', 'a')
     h:write(text .. ' = ' .. translated .. '\n')
     io.close(h)
+    return translated;
   end
 end
 
-return{
+return {
   class = class_locale,
   name = name_locale,
   race = race_locale,

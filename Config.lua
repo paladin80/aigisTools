@@ -31,5 +31,6 @@ return { --if this file errors, you probably forgot a comma--
 	['GIF XY Cutoff'] = 5000,								--Prevents images with an X or Y transformation greater then this value from being made. Can be false. Stops massive slowdowns during gif phase.
 	
 	--Broken ATM IIRC
-    ['Remove duplicate folders'] = true,      
+  ['Remove duplicate folders'] = true,
+  ['Automatic translation'] = false, -- automatically translate some japaneese texts by calling IBM Watson translate API. You need an api key to use it
 	}

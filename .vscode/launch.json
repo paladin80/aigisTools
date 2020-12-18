@@ -5,11 +5,11 @@
       "type": "lua",
       "request": "launch",
       "stopOnEntry": true,
-      "program": "${workspaceFolder}/Scripts/unit",
+      "program": "${workspaceFolder}/Scripts/mission.lua",
       "cwd": "${workspaceFolder}",
       "path": "${workspaceFolder}/Scripts/?.lua",
       "cpath": "${workspaceFolder}/?.dll",
-      "arg": ["938", "text"],
+      "arg": ["parse", "200291", "938", "text"],
       "consoleCoding": "utf8"
     }
   ]

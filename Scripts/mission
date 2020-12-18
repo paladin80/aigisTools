@@ -1,0 +1,45 @@
+local file = require("lib/file")
+local lib = require("missions/list")
+local get_quest_list = require("missions/quest_list")
+
+local type, serie = ...
+
+local process_out = "out/missions/"
+if not file.dir_exists(process_out) then
+  file.make_dir(process_out)
+end
+
+if type == 'list' then
+  lib.dump_list(serie)
+  os.exit()
+end
+
+local serie_id = tonumber(serie)
+if not serie_id then
+  print("Ivalid serie id specified");
+  os.exit()
+end
+
+local serie_type = lib.get_mission_type(serie_id)
+if not serie_type then
+  print("No mission definition found for this serie id");
+  os.exit()
+end
+
+process_out = "out/missions/" .. serie_type .. "/" .. serie_id .. "/"
+if not file.dir_exists(process_out) then
+  file.make_dir(process_out)
+end
+
+
+local missions = get_quest_list()
+
+if type == 'parse' or  type == 'all' then
+  local parser = require("missions/parse")
+  parser.parse_mission(serie_type, serie_id, missions, process_out)
+end
+
+if type == 'wiki' or  type == 'all' then
+  local parser = require("Wiki/mission")
+  parser.dump(serie_type, serie_id, missions, process_out)
+end

@@ -1,3 +1,5 @@
+local config = require "lookup//config"
+
 local translate_url = nil
 local translate_key = nil
 local translate_init = false
@@ -5,6 +7,7 @@ local curlpath = [[curl]]
 
 local function init_translate()
   translate_init = true
+  if not config['Automatic translation'] then return end
   local h = io.open("Data/localisation/translate_keys.txt", "r")
   if h ~= nil then
     local text = assert(h:read("*a"))
@@ -29,17 +32,17 @@ local function escape(s)
   end
   local result = '""' 
   for i, ch in pairs(chars) do
-      result = result .. '\\u' .. string.format("%4x", ch)
+      result = result .. '\\u' .. string.format("%04x", ch)
   end
   return result .. '""'
 end
 
-local function traslate(text)
+local function translate(text)
   if not translate_init then
     init_translate()
   end
   if translate_url == nil or translate_key == nil then
-    return text
+    return nil
   else
     local request = escape(text)
     if (type(text) == "table") then
@@ -72,5 +75,5 @@ local function traslate(text)
 end
 
 return {
-  traslate = traslate
+  translate = translate
 }
