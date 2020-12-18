@@ -1,7 +1,10 @@
 local dl = require("lib/download")
+local tran = require("lib/translate")
+
 local name_dictionary
 local class_dictionary
 local race_dictionary
+local translate_dictionary
 local AllAgesVersionSuffix = ""
 local function Initialize()
   local Initialized = false
@@ -78,20 +81,29 @@ local function name_locale(query, set, full)
 end
 
 local function race_locale(query)
- if not race_dictionary then race_dictionary =  load_loc('Race.txt') end
- if set then
-  race_dictionary[query] = set:gsub(' ', '_')
- elseif full then
-   return race_dictionary
- else
-   if race_dictionary[query] == ".*Unknown*." then return nil else return race_dictionary[query] end
- end
+  if not race_dictionary then race_dictionary =  load_loc('Race.txt') end
+  if race_dictionary[query] == ".*Unknown*." then return nil else return race_dictionary[query] end
+end
+
+local function translate(text)
+  if not translate_dictionary then translate_dictionary =  load_loc('translate.txt') end
+  if translate_dictionary[text] then
+    return translate_dictionary[text]
+  else
+    local translated = tran.traslate(text)
+    translate_dictionary[text] = translated
+    local h = io.open('Data\\localisation\\translate.txt', 'a')
+    h:write(text .. ' = ' .. translated .. '\n')
+    io.close(h)
+  end
 end
 
 return{
   class = class_locale,
   name = name_locale,
   race = race_locale,
+  translate = translate,
   
   effects_ability = require('arrays\\Effects-Ability'),
-  effects_skill = require('arrays\\Effects-Skill')}
+  effects_skill = require('arrays\\Effects-Skill')
+}

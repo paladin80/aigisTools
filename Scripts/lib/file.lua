@@ -12,14 +12,9 @@ local function dir_exists(dir)
   return result
 end
 
-local function file_exists(dir)
-  local command = "cmd /C \"dir /A:-D /B ^\"" .. dir .. "^\" >NUL 2>&1\""
-  --print(command)
-  local h = assert(io.popen(command))
-  local text = assert(h:read('*a'))
-  local result = h:close()
-  if result == nil then result = false end
-  return result
+function file_exists(name)
+  local f=io.open(name,"r")
+  if f~=nil then io.close(f) return true else return false end
 end
 
 local function make_dir(dir)
