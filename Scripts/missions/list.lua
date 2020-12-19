@@ -8,18 +8,18 @@ local loc = require "lookup//localisation"
 
 local mission_types = {
   "Emergency",
+  "Tower",
   "Challenge",
-  "Daily",
   "DevilAdvent",
-  "Harlem",
-  "Raid",
-  "Reproduce",
-  "Story",
   "Subjugation",
   "Assault",
-  "Tutorial",
-  "Tower",
-  "DailyReproduce"
+  "Raid",
+  "DailyReproduce",
+  "Daily",
+  "Harlem",
+  "Reproduce",
+  "Story",
+  "Tutorial"
 }
 
 local incentive_types = {
@@ -49,8 +49,9 @@ local function dump_list(argument)
   local full_dump = false
   if argument == 'all' then full_dump = true end
 
-  local f = io.open('out/missions/mission_series.txt', 'w')
-  assert(f:write(string.format("%7s\t%12s\t%s\t%s\n", "Serie", "Type", "Name", "Translated")))
+  local file = 'out/missions/event_list.txt'
+  local f = io.open(file, 'w')
+  assert(f:write(string.format("%7s\t%12s\t%s\t%s\n", "EventId", "Type", "Name", "Translated")))
 
   for _, mtype in ipairs(mission_types) do
     local qlname = mtype .. "MissionConfig.atb"
@@ -62,7 +63,7 @@ local function dump_list(argument)
         if full_dump or entry.Enable > 0 then
           local incentive = incentive_types[entry.IncentiveType] or mtype
           local name = entry.Name:gsub(':', '')
-          local translated = loc.translate(name)
+          local translated = loc.translate(name, "event_names")
           name = name .. string.rep(" ", 25 - utf8.len(name))
           assert(f:write(string.format("%7s\t%12s\t%s\t%s\n", entry.MissionID, incentive, name, translated)))
         end
@@ -70,7 +71,7 @@ local function dump_list(argument)
     end
   end
   assert(io.close(f))
-  print("mission_series.txt created successfully")
+  print(file .. " created successfully")
 end
 
 return {

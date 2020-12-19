@@ -33,18 +33,25 @@ local function parse_mission(mtype, series, missions, process_out)
     if qTable[mission.QuestID] then
       mission._name = mission.QuestTitle and nt[mission.QuestTitle + 1] and nt[mission.QuestTitle + 1].Message or "???"
       table.insert(filtered_missions, mission)
+      qTable[mission.QuestID] = false
     end
   end
   missions = filtered_missions
 
+  for id, flag in pairs(qTable) do
+    if flag then
+      print("quest " .. id .. " was not found")
+    end
+  end
   -- output
-  local f = io.open(process_out .. 'quests.txt', 'w')
+  local filename = process_out .. 'quests_' .. series .. '.txt'
+  local f = io.open(filename, 'w')
   for i, mission in ipairs(missions) do
-    local content = handle_mission(mission, series, i, mtype, missions)
+    local content = handle_mission(mission, series, i, mtype .. "Mission", missions)
     assert(f:write(content))
   end
   assert(io.close(f))
-  print("quests.txt created successfully")
+  print(filename .. " created successfully")
 end
 
 return {

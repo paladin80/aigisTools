@@ -2,15 +2,15 @@ local file = require("lib/file")
 local lib = require("missions/list")
 local get_quest_list = require("missions/quest_list")
 
-local type, serie = ...
+local serie, type = ...
 
 local process_out = "out/missions/"
 if not file.dir_exists(process_out) then
   file.make_dir(process_out)
 end
 
-if type == 'list' then
-  lib.dump_list(serie)
+if serie == 'list' then
+  lib.dump_list(type)
   os.exit()
 end
 
@@ -31,10 +31,9 @@ if not file.dir_exists(process_out) then
   file.make_dir(process_out)
 end
 
-
 local missions = get_quest_list()
 
-if type == 'parse' or  type == 'all' then
+if type == 'text' or  type == 'all' then
   local parser = require("missions/parse")
   parser.parse_mission(serie_type, serie_id, missions, process_out)
 end

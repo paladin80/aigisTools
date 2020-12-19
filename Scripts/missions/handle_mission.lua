@@ -32,7 +32,6 @@ local function init()
   unitnames = parse_al.parse(text)
 
   term_text = init_terms()
-  enemies = lib_enemies.init_enemies()
   enemygfx_names = lib_enemies.get_enemy_gfx_names()
   treasure_decode = get_treasure_names()
 
@@ -49,10 +48,7 @@ local function init()
 
   local files = dl.getlist_raw()
 
-  for mapn in files:gmatch("Map(%d+)%.aar") do
-    mapn = tonumber(mapn, 10)
-    assert(mapn)
-    assert(not available_maps[mapn])
+  for mapn in files:gmatch("Map([0-9_]+)%.aar") do
     available_maps[mapn] = true
   end
 end
@@ -67,11 +63,12 @@ local function handle_mission(mission, series, series_i, mtype, missions)
     buffer = buffer .. s .. '\n'
   end
 
-  if not enemies then init() end
+  if not unitnames then init() end
 
-  local mapn = tonumber(mission.MapNo)
+  local mapn = string.format("%04d", mission.MapNo)
+  if mtype == "TowerMission" then mapn = "110001_" .. mapn end
   if available_maps[mapn] and not maps[mapn] then
-    local mapname = string.format("Map%03d.aar", mapn)
+    local mapname = string.format("Map%s.aar", mapn)
     local text = dl.getfile(nil, mapname)
     local map = parse_al.parse(text)
     maps[mapn] = map
@@ -104,7 +101,14 @@ local function handle_mission(mission, series, series_i, mtype, missions)
       enemiesmap[series] = ene
     end
   end
-  local ene = series and enemiesmap[series] or enemies
+  local ene = series and enemiesmap[series]
+  -- replace with a global array when not defined
+  if not ene then
+    if not enemies then
+      enemies = lib_enemies.init_enemies()
+    end
+    ene = enemies
+  end
   
   if series and not battletalks[series] then
     local bt = "BattleTalkEvent" .. series .. ".atb"
@@ -145,7 +149,7 @@ local function handle_mission(mission, series, series_i, mtype, missions)
       
       for _, mob in ipairs(entry) do
         local wt, wlct = nil, nil
-        if mtype == "SubjugationMission" then
+        if mtype == "SubjugationMission" or mtype == "AssaultMission" then
           local wave = enemy_total // 100 + 1
           wt = mob_counts[wave] or {}
           --io.stderr:write("wave:",wave,"\n")
@@ -296,12 +300,12 @@ local function handle_mission(mission, series, series_i, mtype, missions)
         print2("Reward X", reward_name)
       end
       local it_a, it_b, it_c = ipairs{mob_counts}
-      if mtype == "SubjugationMission" then
+      if mtype == "SubjugationMission" or mtype == "AssaultMission" then
         it_a, it_b, it_c = ipairs(mob_counts)
       end
       for wave, mob_counts in it_a, it_b, it_c do
         local wt = nil
-        if mtype == "SubjugationMission" then
+        if mtype == "SubjugationMission" or mtype == "AssaultMission" then
           print2("Wave " .. wave)
           wt = mob_level_counts[wave]
         end
@@ -309,12 +313,14 @@ local function handle_mission(mission, series, series_i, mtype, missions)
         for id, count in pairs(mob_counts) do
           --print2(" ", id, enemies[id]._name, "x" .. count, "Level = " .. mob_min_levels[id] .. " .. " .. mob_max_levels[id])
           for lvl, count in pairs(mob_level_counts[id]) do
-            --io.stderr:write(id .. "\n")
             local ene_name = ene[id] and ene[id]._name
             if ene[id] and ene_name == nil then
               local pattern = (ene[id].PatternID - 0x00200000) // 0x100
               ene_name = enemygfx_names[pattern]
               --print2(id, pattern, ene_name)
+              if ene_name == nil or ene_name == "" then
+                ene_name = "?" .. pattern
+              end
             end
             if ene_name == nil or ene_name == "" then
               ene_name = "?"

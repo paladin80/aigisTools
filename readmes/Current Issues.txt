@@ -1,9 +1,9 @@
 parse_missions
-* Cannot output the tower missions
+* [FIXED] Cannot output the tower missions
 * New events (ID:200XXX) have incorrect enemy outputs, they just count up from monster ID#1 onward repeatedly, even if that mission only has say, monsters #31-35
 * For Ootakemaru (500288) lv11+ specifically, reads completely wrong enemies, also dunno why there's a random goblin in there when it never shows up ingame
-* Cannot output the assault missions (workaround is in parse_missions_assault)
-
+* [CANTFIX] Cannot output the assault missions (workaround is in parse_missions_assault)
+The assault missions are no longer available in the archive. I incorporated changes from the parse_missions_assault file, but can not test how it works 
 
 
 unit
